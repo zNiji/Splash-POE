@@ -3,17 +3,17 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static EObstacles;
 
-public class SpawnObstacle : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
-    [SerializeField] private ObstacleType[] obstacleTypes;
-    [SerializeField] private GameObject[] obstaclePrefabs;
+    [SerializeField] private SpawnableType[] SpawnableTypes;
+    [SerializeField] private GameObject[] SpawnablePrefabs;
 
     private int obstacleIndex;
 
     private void Awake()
     {
         // Initialize obstacle index
-        obstacleIndex = UnityEngine.Random.Range(0, obstacleTypes.Length);
+        obstacleIndex = UnityEngine.Random.Range(0, SpawnableTypes.Length);
 
         Spawn();
     }
@@ -21,7 +21,7 @@ public class SpawnObstacle : MonoBehaviour
     private void Spawn()
     {
         // Get the obstacle prefab based on the obstacle index
-        GameObject obstaclePrefab = obstaclePrefabs[obstacleIndex];
+        GameObject obstaclePrefab = SpawnablePrefabs[obstacleIndex];
 
         // Instantiate the obstacle at the spawn point
         GameObject obstacle = Instantiate(obstaclePrefab, transform.position, Quaternion.identity);

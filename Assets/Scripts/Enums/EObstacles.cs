@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class EObstacles : MonoBehaviour
 {
-    public enum ObstacleType
+    public enum SpawnableType
     {
         Rock,
         Tree,
         Fence,
+        wateringCan,
         None
     }
 }

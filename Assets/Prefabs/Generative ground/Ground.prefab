@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.8, y: -0.1, z: -0.98825186}
-  m_LocalScale: {x: 51.387413, y: 1, z: 67.761986}
+  m_LocalScale: {x: 84.86272, y: 0.94929326, z: 2000}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5740258356188854292}
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e0f1e4aa9a435c4e92c0e65edea85a4, type: 2}
+  - {fileID: 2100000, guid: 604f0e0fc1aa55b46b252ed77e9eaeb7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -154,11 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea58d9e5cb0a9694e87fc58d1155125e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleTypes: 000000000100000002000000
-  obstaclePrefabs:
-  - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  SpawnableTypes: 
+  SpawnablePrefabs: []
 --- !u!1 &8258897176216548198
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,8 +200,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea58d9e5cb0a9694e87fc58d1155125e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleTypes: 000000000100000002000000
-  obstaclePrefabs:
-  - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  SpawnableTypes: 
+  SpawnablePrefabs: []
