@@ -522,6 +522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: splash
       objectReference: {fileID: 0}
+    - target: {fileID: 264627348978886845, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2163658665160759929, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.331213
