@@ -2,23 +2,19 @@ using UnityEngine;
 
 public class ControlSplash : MonoBehaviour
 {
-    public float speed = 5.0f; // adjust this value to control the movement speed
+    [SerializeField] private float speed = 20.0f; // adjust this value to control the movement speed of splash
+    [SerializeField] private Transform cameraTransform; //  camera's transform to follow the player
+    [SerializeField] private float smoothSpeed = 1.0f; // value to control the camera's movement speed
+    [SerializeField] private Vector3 offset = new Vector3(0, 2, -7); // value to control the camera's position relative to the character
+
+    public int triggerCount = 1;
 
     // Update is called once per frame
     void Update()
     {
-        // Read the WASD keys
+        // Read the AD keys to move left and right
         float horizontalInput = 0;
-        float verticalInput = 0;
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            verticalInput = 1;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            verticalInput = -1;
-        }
+        float verticalInput = 1; // always move forward
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -33,6 +29,14 @@ public class ControlSplash : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, 0, verticalInput);
 
         // Apply movement to the ball
-        transform.position += movement * speed * Time.deltaTime;
+        transform.position += movement * (speed * triggerCount) * Time.deltaTime;
+
+        // Update camera position
+        Vector3 desiredCameraPosition = transform.position + offset;
+        Vector3 smoothedCameraPosition = Vector3.Lerp(cameraTransform.position, desiredCameraPosition, smoothSpeed);
+        cameraTransform.position = smoothedCameraPosition;
+
+        // Make camera face the character
+        cameraTransform.LookAt(transform);
     }
 }
