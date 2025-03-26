@@ -7,6 +7,9 @@ public class PlayerHealth : MonoBehaviour
     private float currentHealth;
     public Image healthBar;
 
+    private bool isDead;
+    public GameManager gameManager;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -15,6 +18,13 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         healthBar.fillAmount = Mathf.Clamp(maxHealth / currentHealth, 0, 1);
+
+        if (currentHealth <= 0 && !isDead)
+        {
+            isDead = true;
+            gameManager.gameOver();
+
+        }
     }
 
     public bool Heal(float amount)
