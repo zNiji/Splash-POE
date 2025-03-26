@@ -1,13 +1,20 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private float maxHealth = 100f;
+    public float maxHealth = 100f;
     private float currentHealth;
+    public Image healthBar;
 
     private void Start()
     {
         currentHealth = maxHealth;
+    }
+
+    private void Update()
+    {
+        healthBar.fillAmount = Mathf.Clamp(maxHealth / currentHealth, 0, 1);
     }
 
     public bool Heal(float amount)
