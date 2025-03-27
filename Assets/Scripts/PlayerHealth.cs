@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         if (health < maxHealth)
         {
             health += amount;
-            health = Mathf.Clamp(health, 0f, maxHealth);
+            healthBar.fillAmount = Mathf.Clamp(health, 0f, maxHealth);
             return true;
         }
         return false; // Returns false if no healing was needed

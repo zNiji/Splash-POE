@@ -58,29 +58,16 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6959468213352489017}
+      addedObject: {fileID: 5451384455878474402}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5451384455878474402}
+      addedObject: {fileID: 8554217352039822278}
   m_SourcePrefab: {fileID: 100100000, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
 --- !u!1 &1502442080880785948 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
   m_PrefabInstance: {fileID: 1736373833825404749}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6959468213352489017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502442080880785948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e98d8a396d8294c8e5cc57979d990e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
 --- !u!65 &5451384455878474402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -102,3 +89,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.426879, y: 1.8930525, z: 0.27552414}
   m_Center: {x: -2.9875898, y: 0.95444685, z: 0.36223793}
+--- !u!114 &8554217352039822278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502442080880785948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e98d8a396d8294c8e5cc57979d990e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
