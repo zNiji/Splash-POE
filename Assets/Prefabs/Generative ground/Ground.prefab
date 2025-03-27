@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1215639724121447149}
   - component: {fileID: 7995711932040251919}
-  - component: {fileID: 5046263627405369957}
   - component: {fileID: 4320858532647754261}
+  - component: {fileID: 1026570872188295771}
   m_Layer: 0
   m_Name: Obstacle (6)
   m_TagString: Untagged
@@ -51,27 +51,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5046263627405369957
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27199636679944579}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4320858532647754261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +65,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1026570872188295771
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27199636679944579}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &97285686683694126
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,8 +97,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1246516275563196681}
   - component: {fileID: 1133955502750050520}
-  - component: {fileID: 2918756568188258200}
   - component: {fileID: 4544871011934113026}
+  - component: {fileID: 3855762828109976820}
   m_Layer: 0
   m_Name: Obstacle (38)
   m_TagString: Untagged
@@ -137,27 +138,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2918756568188258200
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97285686683694126}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4544871011934113026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +152,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3855762828109976820
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97285686683694126}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &175243462071517373
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,8 +209,8 @@ Transform:
   - {fileID: 5740258356188854292}
   - {fileID: 1135930871019458401}
   - {fileID: 3025213482532594153}
-  - {fileID: 2188526317319645127}
   - {fileID: 6587254393220936077}
+  - {fileID: 2188526317319645127}
   - {fileID: 2374386501566462848}
   - {fileID: 7318157598330589538}
   - {fileID: 1215639724121447149}
@@ -386,8 +388,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8878777987128004632}
   - component: {fileID: 7220610940258478410}
-  - component: {fileID: 4797852058016054387}
   - component: {fileID: 6219689294831609727}
+  - component: {fileID: 1368796319055394951}
   m_Layer: 0
   m_Name: Obstacle (63)
   m_TagString: Untagged
@@ -427,27 +429,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4797852058016054387
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279127445660977778}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6219689294831609727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,6 +443,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1368796319055394951
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279127445660977778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &280629240706072777
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,8 +475,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7318157598330589538}
   - component: {fileID: 6837751181024729253}
-  - component: {fileID: 1691203416701225933}
   - component: {fileID: 2032354795529034301}
+  - component: {fileID: 2612157073771183101}
   m_Layer: 0
   m_Name: Obstacle (5)
   m_TagString: Untagged
@@ -513,27 +516,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1691203416701225933
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280629240706072777}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2032354795529034301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,6 +530,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2612157073771183101
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280629240706072777}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &365702654503860921
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,8 +562,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6477705625408212992}
   - component: {fileID: 3921333299795652826}
-  - component: {fileID: 8429158947090150823}
   - component: {fileID: 8154862460485649033}
+  - component: {fileID: 6414561322175506281}
   m_Layer: 0
   m_Name: Obstacle (40)
   m_TagString: Untagged
@@ -599,27 +603,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8429158947090150823
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365702654503860921}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8154862460485649033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,6 +617,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6414561322175506281
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365702654503860921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &409760380602292487
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,8 +649,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7135963926586367051}
   - component: {fileID: 7308723726071753738}
-  - component: {fileID: 7749899054175623888}
   - component: {fileID: 5414522463849100689}
+  - component: {fileID: 302590873594867882}
   m_Layer: 0
   m_Name: Obstacle (9)
   m_TagString: Untagged
@@ -685,27 +690,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7749899054175623888
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409760380602292487}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5414522463849100689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,6 +704,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &302590873594867882
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409760380602292487}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &625380043339315230
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,8 +736,8 @@ GameObject:
   m_Component:
   - component: {fileID: 856512858252436488}
   - component: {fileID: 8297158919250719521}
-  - component: {fileID: 3434305325583556910}
   - component: {fileID: 8654441964831090967}
+  - component: {fileID: 1903559597955657245}
   m_Layer: 0
   m_Name: Obstacle (58)
   m_TagString: Untagged
@@ -771,27 +777,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3434305325583556910
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625380043339315230}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8654441964831090967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,6 +791,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1903559597955657245
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625380043339315230}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &666122711078413669
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,8 +823,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8298840778408903482}
   - component: {fileID: 8722828887469533665}
-  - component: {fileID: 3251236188150920292}
   - component: {fileID: 5669772087774770996}
+  - component: {fileID: 1207242878856420009}
   m_Layer: 0
   m_Name: Obstacle (80)
   m_TagString: Untagged
@@ -857,27 +864,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3251236188150920292
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666122711078413669}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5669772087774770996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,6 +878,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1207242878856420009
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666122711078413669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &696322021442842841
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,8 +910,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5740258356188854292}
   - component: {fileID: 638935565471070840}
-  - component: {fileID: 6454889115019783397}
   - component: {fileID: 2045649125967180711}
+  - component: {fileID: 5745438453513035068}
   m_Layer: 0
   m_Name: ObstacleOne
   m_TagString: Obstacle
@@ -940,27 +948,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnableTypes: 
   SpawnablePrefabs: []
---- !u!65 &6454889115019783397
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696322021442842841}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2045649125967180711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,6 +962,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5745438453513035068
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696322021442842841}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &932039580273691402
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,8 +994,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6587254393220936077}
   - component: {fileID: 4585019141336913784}
-  - component: {fileID: 5919958621232751148}
   - component: {fileID: 6143855055742337730}
+  - component: {fileID: 2696031822460235673}
   m_Layer: 0
   m_Name: Obstacle (3)
   m_TagString: Untagged
@@ -1026,27 +1035,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5919958621232751148
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932039580273691402}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6143855055742337730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,6 +1049,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2696031822460235673
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932039580273691402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &963959279414374510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,8 +1081,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8498218172937168525}
   - component: {fileID: 1550971733860337229}
-  - component: {fileID: 1229299515643775028}
   - component: {fileID: 8459943048132872765}
+  - component: {fileID: 8223657759409629128}
   m_Layer: 0
   m_Name: Obstacle (19)
   m_TagString: Untagged
@@ -1112,27 +1122,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1229299515643775028
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963959279414374510}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8459943048132872765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,6 +1136,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &8223657759409629128
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963959279414374510}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &983649055270712838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,8 +1168,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5262493476307629305}
   - component: {fileID: 7621052814985187088}
-  - component: {fileID: 9036699120285111412}
   - component: {fileID: 5352235727903249825}
+  - component: {fileID: 2569422047746242933}
   m_Layer: 0
   m_Name: Obstacle (72)
   m_TagString: Untagged
@@ -1198,27 +1209,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &9036699120285111412
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983649055270712838}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5352235727903249825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,6 +1223,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2569422047746242933
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983649055270712838}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1051944718948483517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,8 +1255,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4803103511903568276}
   - component: {fileID: 8231873196683100893}
-  - component: {fileID: 8403491048903600668}
   - component: {fileID: 7580522461742422973}
+  - component: {fileID: 7871999246510821765}
   m_Layer: 0
   m_Name: Obstacle (64)
   m_TagString: Untagged
@@ -1284,27 +1296,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8403491048903600668
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051944718948483517}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7580522461742422973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1319,6 +1310,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7871999246510821765
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051944718948483517}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1132266073524286020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,8 +1342,8 @@ GameObject:
   m_Component:
   - component: {fileID: 552859209935199305}
   - component: {fileID: 657453551335218160}
-  - component: {fileID: 6660035294527463459}
   - component: {fileID: 7460779118066801955}
+  - component: {fileID: 6793910649910578036}
   m_Layer: 0
   m_Name: Obstacle (25)
   m_TagString: Untagged
@@ -1370,27 +1383,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6660035294527463459
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132266073524286020}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7460779118066801955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1405,6 +1397,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6793910649910578036
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132266073524286020}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1765754746768201198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,8 +1429,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8978794917781074138}
   - component: {fileID: 6933471849499779429}
-  - component: {fileID: 8475854783532386866}
   - component: {fileID: 4920404853216568146}
+  - component: {fileID: 2044463409667022167}
   m_Layer: 0
   m_Name: Obstacle (29)
   m_TagString: Untagged
@@ -1456,27 +1470,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8475854783532386866
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765754746768201198}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4920404853216568146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,6 +1484,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2044463409667022167
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765754746768201198}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1771037347454416856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,8 +1516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1856508763314081098}
   - component: {fileID: 5242307601148908170}
-  - component: {fileID: 8301201135003710970}
   - component: {fileID: 6588182705868110793}
+  - component: {fileID: 5526955740458775097}
   m_Layer: 0
   m_Name: Obstacle (8)
   m_TagString: Untagged
@@ -1542,27 +1557,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8301201135003710970
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1771037347454416856}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6588182705868110793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1577,6 +1571,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5526955740458775097
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771037347454416856}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1806787975821208772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,8 +1603,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6739959264044516909}
   - component: {fileID: 2659579255208903272}
-  - component: {fileID: 7742040257229164623}
   - component: {fileID: 1370961720966473238}
+  - component: {fileID: 3926023546738950486}
   m_Layer: 0
   m_Name: Obstacle (61)
   m_TagString: Untagged
@@ -1628,27 +1644,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7742040257229164623
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806787975821208772}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1370961720966473238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,6 +1658,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3926023546738950486
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806787975821208772}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1902248347719333755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,8 +1690,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6568215873935024829}
   - component: {fileID: 4508539413632642483}
-  - component: {fileID: 1044401365917383771}
   - component: {fileID: 1345272925531845698}
+  - component: {fileID: 3254177853100159517}
   m_Layer: 0
   m_Name: Obstacle (66)
   m_TagString: Untagged
@@ -1714,27 +1731,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1044401365917383771
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902248347719333755}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1345272925531845698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,6 +1745,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3254177853100159517
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902248347719333755}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1918339003011627323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,8 +1777,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2188526317319645127}
   - component: {fileID: 9036628015974396666}
-  - component: {fileID: 877484500999934829}
   - component: {fileID: 1011751980426536884}
+  - component: {fileID: 1948469074210809085}
   m_Layer: 0
   m_Name: Obstacle (2)
   m_TagString: Untagged
@@ -1800,27 +1818,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &877484500999934829
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918339003011627323}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1011751980426536884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1835,6 +1832,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1948469074210809085
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918339003011627323}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2019341621363073440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,8 +1864,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7974533426924675896}
   - component: {fileID: 927171699024827749}
-  - component: {fileID: 6778536007173981350}
   - component: {fileID: 7797410914100270179}
+  - component: {fileID: 4876114789261080241}
   m_Layer: 0
   m_Name: Obstacle (93)
   m_TagString: Untagged
@@ -1886,27 +1905,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6778536007173981350
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019341621363073440}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7797410914100270179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,6 +1919,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4876114789261080241
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019341621363073440}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2020983045062362466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,8 +1951,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8735238553213264625}
   - component: {fileID: 1409689068265177912}
-  - component: {fileID: 1829281194489172733}
   - component: {fileID: 7552623229112864458}
+  - component: {fileID: 6071220167754986356}
   m_Layer: 0
   m_Name: Obstacle (21)
   m_TagString: Untagged
@@ -1972,27 +1992,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1829281194489172733
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020983045062362466}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7552623229112864458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,6 +2006,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6071220167754986356
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020983045062362466}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2120716052512163117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,8 +2038,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2851525548671845745}
   - component: {fileID: 857939816456708682}
-  - component: {fileID: 5396492481532347072}
   - component: {fileID: 3205882337593650969}
+  - component: {fileID: 4042784022638102048}
   m_Layer: 0
   m_Name: Obstacle (20)
   m_TagString: Untagged
@@ -2058,27 +2079,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5396492481532347072
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120716052512163117}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3205882337593650969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2093,6 +2093,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4042784022638102048
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120716052512163117}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2121583402857635675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,8 +2125,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1239991375947416332}
   - component: {fileID: 4144782417007358601}
-  - component: {fileID: 4327321022821042658}
   - component: {fileID: 3906501256874345941}
+  - component: {fileID: 531522152911600394}
   m_Layer: 0
   m_Name: Obstacle (31)
   m_TagString: Untagged
@@ -2144,27 +2166,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4327321022821042658
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121583402857635675}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3906501256874345941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2179,6 +2180,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &531522152911600394
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121583402857635675}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2246621762312727078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,8 +2212,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6557106714039114794}
   - component: {fileID: 5740849287713871115}
-  - component: {fileID: 8490308222935170570}
   - component: {fileID: 3664907733950222915}
+  - component: {fileID: 1260519567636460188}
   m_Layer: 0
   m_Name: Obstacle (56)
   m_TagString: Untagged
@@ -2230,27 +2253,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8490308222935170570
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2246621762312727078}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3664907733950222915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2265,6 +2267,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1260519567636460188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2246621762312727078}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2477491796597015833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,8 +2299,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2599015170238537838}
   - component: {fileID: 6893615900006152450}
-  - component: {fileID: 2417542640230896835}
   - component: {fileID: 7375318248044047612}
+  - component: {fileID: 8407468011577914592}
   m_Layer: 0
   m_Name: Obstacle (48)
   m_TagString: Untagged
@@ -2316,27 +2340,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2417542640230896835
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2477491796597015833}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7375318248044047612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2351,6 +2354,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &8407468011577914592
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477491796597015833}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2597830087300815757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,8 +2386,8 @@ GameObject:
   m_Component:
   - component: {fileID: 177734220261505309}
   - component: {fileID: 2961166840319698000}
-  - component: {fileID: 2794271023654496327}
   - component: {fileID: 3783581680222874876}
+  - component: {fileID: 8926584508642685621}
   m_Layer: 0
   m_Name: Obstacle (87)
   m_TagString: Untagged
@@ -2402,27 +2427,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2794271023654496327
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2597830087300815757}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3783581680222874876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2437,6 +2441,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &8926584508642685621
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2597830087300815757}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2624514375911356823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,8 +2473,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8378100282168354460}
   - component: {fileID: 1024728815572862908}
-  - component: {fileID: 9201193549599602399}
   - component: {fileID: 1799231378983377149}
+  - component: {fileID: 8876162066806012168}
   m_Layer: 0
   m_Name: Obstacle (78)
   m_TagString: Untagged
@@ -2488,27 +2514,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &9201193549599602399
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2624514375911356823}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1799231378983377149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2523,6 +2528,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &8876162066806012168
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624514375911356823}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2721709413607489473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,8 +2560,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8937013397132136223}
   - component: {fileID: 1593886620528655706}
-  - component: {fileID: 1683168527499670029}
   - component: {fileID: 517991153713773062}
+  - component: {fileID: 29130485515019431}
   m_Layer: 0
   m_Name: Obstacle (71)
   m_TagString: Untagged
@@ -2574,27 +2601,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1683168527499670029
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2721709413607489473}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &517991153713773062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2609,6 +2615,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &29130485515019431
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721709413607489473}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3031090119505764698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,8 +2647,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6812521322632153404}
   - component: {fileID: 6538932486266557135}
-  - component: {fileID: 8722507169532034279}
   - component: {fileID: 9004556084405762077}
+  - component: {fileID: 5979069787925489450}
   m_Layer: 0
   m_Name: Obstacle (55)
   m_TagString: Untagged
@@ -2660,27 +2688,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8722507169532034279
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3031090119505764698}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9004556084405762077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2695,6 +2702,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5979069787925489450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3031090119505764698}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3086493092784080860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,8 +2734,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9209877814247094418}
   - component: {fileID: 8633064946285321878}
-  - component: {fileID: 347226799028179447}
   - component: {fileID: 8446387763005369971}
+  - component: {fileID: 186929895559255242}
   m_Layer: 0
   m_Name: Obstacle (22)
   m_TagString: Untagged
@@ -2746,27 +2775,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &347226799028179447
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3086493092784080860}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8446387763005369971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2781,6 +2789,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &186929895559255242
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3086493092784080860}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3247636045766546368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,8 +2821,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1469076902667777401}
   - component: {fileID: 8202175340036985770}
-  - component: {fileID: 2710930087010516677}
   - component: {fileID: 1781220387992823342}
+  - component: {fileID: 7653637271907847019}
   m_Layer: 0
   m_Name: Obstacle (33)
   m_TagString: Untagged
@@ -2832,27 +2862,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2710930087010516677
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3247636045766546368}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1781220387992823342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2867,6 +2876,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7653637271907847019
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3247636045766546368}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3249311664072874037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,8 +2908,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8440053431431636568}
   - component: {fileID: 8842113015102265571}
-  - component: {fileID: 6606904707230742920}
   - component: {fileID: 7613917639844905662}
+  - component: {fileID: 7757729058320498868}
   m_Layer: 0
   m_Name: Obstacle (91)
   m_TagString: Untagged
@@ -2918,27 +2949,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6606904707230742920
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3249311664072874037}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7613917639844905662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2953,6 +2963,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7757729058320498868
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249311664072874037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3512545922055990181
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,8 +2995,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4202829222929013840}
   - component: {fileID: 7793621080997066487}
-  - component: {fileID: 6278786990476563770}
   - component: {fileID: 7613016033090679118}
+  - component: {fileID: 6908143880248833271}
   m_Layer: 0
   m_Name: Obstacle (24)
   m_TagString: Untagged
@@ -3004,27 +3036,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6278786990476563770
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3512545922055990181}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7613016033090679118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3039,6 +3050,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6908143880248833271
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512545922055990181}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3566844029069637867
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,8 +3082,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4050872765429847014}
   - component: {fileID: 1962631418208118028}
-  - component: {fileID: 6472752089323955439}
   - component: {fileID: 4854597421653454320}
+  - component: {fileID: 3282214614579516715}
   m_Layer: 0
   m_Name: Obstacle (43)
   m_TagString: Untagged
@@ -3090,27 +3123,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6472752089323955439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3566844029069637867}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4854597421653454320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3125,6 +3137,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3282214614579516715
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566844029069637867}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3572516695171194701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,8 +3169,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2171066279558301288}
   - component: {fileID: 6407067959335581883}
-  - component: {fileID: 1428667427080868798}
   - component: {fileID: 436605050562812467}
+  - component: {fileID: 4295904823496475150}
   m_Layer: 0
   m_Name: Obstacle (49)
   m_TagString: Untagged
@@ -3176,27 +3210,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1428667427080868798
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3572516695171194701}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &436605050562812467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3211,6 +3224,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4295904823496475150
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572516695171194701}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3588362660344996865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,8 +3256,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1225427194935780038}
   - component: {fileID: 6789296738633632003}
-  - component: {fileID: 6690368025211015116}
   - component: {fileID: 7318338828366078081}
+  - component: {fileID: 6778554712191062581}
   m_Layer: 0
   m_Name: Obstacle (37)
   m_TagString: Untagged
@@ -3262,27 +3297,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6690368025211015116
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3588362660344996865}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7318338828366078081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3297,6 +3311,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6778554712191062581
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588362660344996865}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3720420601785330658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,8 +3343,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1305224686510448115}
   - component: {fileID: 6966681450180055698}
-  - component: {fileID: 7437998742195044034}
   - component: {fileID: 492908863782274966}
+  - component: {fileID: 744358487291512616}
   m_Layer: 0
   m_Name: Obstacle (73)
   m_TagString: Untagged
@@ -3348,27 +3384,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7437998742195044034
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3720420601785330658}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &492908863782274966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3383,6 +3398,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &744358487291512616
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3720420601785330658}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3785905396123404200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3393,8 +3430,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7350503299303700854}
   - component: {fileID: 4493769951863555410}
-  - component: {fileID: 2708688938684578546}
   - component: {fileID: 8930192273894925719}
+  - component: {fileID: 2795037988986870131}
   m_Layer: 0
   m_Name: Obstacle (86)
   m_TagString: Untagged
@@ -3434,27 +3471,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2708688938684578546
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3785905396123404200}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8930192273894925719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3469,6 +3485,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2795037988986870131
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785905396123404200}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3897577562814335050
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,8 +3517,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8942318368249357748}
   - component: {fileID: 7976496941211510448}
-  - component: {fileID: 4149099297341377629}
   - component: {fileID: 5119648788952460537}
+  - component: {fileID: 3961549614144443970}
   m_Layer: 0
   m_Name: Obstacle (59)
   m_TagString: Untagged
@@ -3520,27 +3558,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4149099297341377629
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3897577562814335050}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5119648788952460537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3555,6 +3572,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3961549614144443970
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3897577562814335050}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &3972422271798550350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3565,8 +3604,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8290194129519920780}
   - component: {fileID: 74478019934514013}
-  - component: {fileID: 1958302696609415442}
   - component: {fileID: 1777497819699667319}
+  - component: {fileID: 5292630053495897337}
   m_Layer: 0
   m_Name: Obstacle (15)
   m_TagString: Untagged
@@ -3606,27 +3645,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1958302696609415442
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3972422271798550350}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1777497819699667319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3641,6 +3659,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5292630053495897337
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3972422271798550350}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4006202040826415433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,8 +3691,8 @@ GameObject:
   m_Component:
   - component: {fileID: 557622378627738054}
   - component: {fileID: 2602654007852586188}
-  - component: {fileID: 4369304810343784432}
   - component: {fileID: 5619794736838868165}
+  - component: {fileID: 188950916551356294}
   m_Layer: 0
   m_Name: Obstacle (85)
   m_TagString: Untagged
@@ -3692,27 +3732,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4369304810343784432
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006202040826415433}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5619794736838868165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3727,6 +3746,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &188950916551356294
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006202040826415433}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4371610983888483081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3737,8 +3778,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4237483186343226164}
   - component: {fileID: 6578231746004903088}
-  - component: {fileID: 3056543035069512711}
   - component: {fileID: 6926271652734940412}
+  - component: {fileID: 5287259833746606157}
   m_Layer: 0
   m_Name: Obstacle (52)
   m_TagString: Untagged
@@ -3778,27 +3819,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3056543035069512711
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371610983888483081}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6926271652734940412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3813,6 +3833,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5287259833746606157
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371610983888483081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4410453984118204970
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,8 +3865,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2842050647208087948}
   - component: {fileID: 7603593186052179863}
-  - component: {fileID: 7192578289668706764}
   - component: {fileID: 8325457004206080388}
+  - component: {fileID: 7113500148766615829}
   m_Layer: 0
   m_Name: Obstacle (84)
   m_TagString: Untagged
@@ -3864,27 +3906,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7192578289668706764
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4410453984118204970}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8325457004206080388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3899,6 +3920,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7113500148766615829
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410453984118204970}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4591498295502153272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,8 +3952,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3025213482532594153}
   - component: {fileID: 3021025346543530984}
-  - component: {fileID: 9101987658022909863}
   - component: {fileID: 3419663498691566103}
+  - component: {fileID: 1131417050702516071}
   m_Layer: 0
   m_Name: Obstacle (1)
   m_TagString: Untagged
@@ -3950,27 +3993,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &9101987658022909863
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4591498295502153272}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3419663498691566103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3985,6 +4007,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1131417050702516071
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4591498295502153272}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4647286106964163861
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,8 +4039,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5931027412948266404}
   - component: {fileID: 2774151180828495426}
-  - component: {fileID: 2950912167241546846}
   - component: {fileID: 6363407754953605114}
+  - component: {fileID: 9014838619110933533}
   m_Layer: 0
   m_Name: Obstacle (90)
   m_TagString: Untagged
@@ -4036,27 +4080,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2950912167241546846
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4647286106964163861}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6363407754953605114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4071,6 +4094,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &9014838619110933533
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4647286106964163861}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4660699032930972226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,8 +4126,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1876765441232235408}
   - component: {fileID: 1907099991211723064}
-  - component: {fileID: 485508276217836105}
   - component: {fileID: 3775389620789674708}
+  - component: {fileID: 8500540630006009106}
   m_Layer: 0
   m_Name: Obstacle (42)
   m_TagString: Untagged
@@ -4122,27 +4167,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &485508276217836105
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4660699032930972226}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3775389620789674708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4157,6 +4181,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &8500540630006009106
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4660699032930972226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4713268031404737659
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,8 +4213,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1506061720400737379}
   - component: {fileID: 4035336778036353100}
-  - component: {fileID: 6918187613664588142}
   - component: {fileID: 5296178853444586377}
+  - component: {fileID: 7196831271332543898}
   m_Layer: 0
   m_Name: Obstacle (94)
   m_TagString: Untagged
@@ -4208,27 +4254,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6918187613664588142
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4713268031404737659}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5296178853444586377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4243,6 +4268,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7196831271332543898
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4713268031404737659}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4795758898796779613
 GameObject:
   m_ObjectHideFlags: 0
@@ -4253,8 +4300,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6265403010982304931}
   - component: {fileID: 7010398080261796397}
-  - component: {fileID: 6978558219992011902}
   - component: {fileID: 6700311357031659496}
+  - component: {fileID: 1977413041697335568}
   m_Layer: 0
   m_Name: Obstacle (62)
   m_TagString: Untagged
@@ -4294,27 +4341,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6978558219992011902
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4795758898796779613}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6700311357031659496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4329,6 +4355,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1977413041697335568
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4795758898796779613}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4860097259263939348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4339,8 +4387,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2582469460307903748}
   - component: {fileID: 9192558841179551002}
-  - component: {fileID: 5635460393631365578}
   - component: {fileID: 1858075213685947033}
+  - component: {fileID: 3748445681183720883}
   m_Layer: 0
   m_Name: Obstacle (44)
   m_TagString: Untagged
@@ -4380,27 +4428,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5635460393631365578
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4860097259263939348}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1858075213685947033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4415,6 +4442,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3748445681183720883
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4860097259263939348}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4941396479927728857
 GameObject:
   m_ObjectHideFlags: 0
@@ -4425,8 +4474,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1418762144634784046}
   - component: {fileID: 979588712128733734}
-  - component: {fileID: 5686099344164272840}
   - component: {fileID: 4794497017555451449}
+  - component: {fileID: 5148530870647696085}
   m_Layer: 0
   m_Name: Obstacle (45)
   m_TagString: Untagged
@@ -4466,27 +4515,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5686099344164272840
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4941396479927728857}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4794497017555451449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4501,6 +4529,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5148530870647696085
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4941396479927728857}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4979909698316210459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4511,8 +4561,8 @@ GameObject:
   m_Component:
   - component: {fileID: 814295351220168014}
   - component: {fileID: 1984315109740470199}
-  - component: {fileID: 9039372908195105336}
   - component: {fileID: 640972842324138841}
+  - component: {fileID: 3582731389378428013}
   m_Layer: 0
   m_Name: Obstacle (34)
   m_TagString: Untagged
@@ -4552,27 +4602,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &9039372908195105336
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4979909698316210459}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &640972842324138841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4587,6 +4616,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3582731389378428013
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4979909698316210459}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5125843431632256319
 GameObject:
   m_ObjectHideFlags: 0
@@ -4597,8 +4648,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3544896429197040253}
   - component: {fileID: 1809362215562194688}
-  - component: {fileID: 213191253143492713}
   - component: {fileID: 7261303677517244177}
+  - component: {fileID: 6063259045600664990}
   m_Layer: 0
   m_Name: Obstacle (16)
   m_TagString: Untagged
@@ -4638,27 +4689,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &213191253143492713
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5125843431632256319}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7261303677517244177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4673,6 +4703,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6063259045600664990
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125843431632256319}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5220054675613924804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4683,8 +4735,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5148602274217585892}
   - component: {fileID: 3373966509378162473}
-  - component: {fileID: 507122470403734909}
   - component: {fileID: 6218413762456043291}
+  - component: {fileID: 6419684989481429449}
   m_Layer: 0
   m_Name: Obstacle (12)
   m_TagString: Untagged
@@ -4724,27 +4776,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &507122470403734909
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5220054675613924804}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6218413762456043291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4759,6 +4790,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6419684989481429449
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5220054675613924804}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5393952023921403625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4769,8 +4822,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2396312707636103794}
   - component: {fileID: 1079006239279016877}
-  - component: {fileID: 6193689486731643872}
   - component: {fileID: 4101699652591273761}
+  - component: {fileID: 567079475404677667}
   m_Layer: 0
   m_Name: Obstacle (28)
   m_TagString: Untagged
@@ -4810,27 +4863,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6193689486731643872
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5393952023921403625}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4101699652591273761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4845,6 +4877,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &567079475404677667
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393952023921403625}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5507673924174738394
 GameObject:
   m_ObjectHideFlags: 0
@@ -4855,8 +4909,8 @@ GameObject:
   m_Component:
   - component: {fileID: 134022792565230666}
   - component: {fileID: 4283152970978260856}
-  - component: {fileID: 5316144784873303327}
   - component: {fileID: 5240718794309312454}
+  - component: {fileID: 7004606966997691748}
   m_Layer: 0
   m_Name: Obstacle (46)
   m_TagString: Untagged
@@ -4896,27 +4950,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5316144784873303327
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5507673924174738394}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5240718794309312454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4931,6 +4964,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7004606966997691748
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5507673924174738394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5514580688326897143
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,8 +4996,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3457365466672050243}
   - component: {fileID: 146656432297019676}
-  - component: {fileID: 1197268885066406431}
   - component: {fileID: 7898391871217550608}
+  - component: {fileID: 3671511094779319715}
   m_Layer: 0
   m_Name: Obstacle (69)
   m_TagString: Untagged
@@ -4982,27 +5037,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1197268885066406431
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5514580688326897143}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7898391871217550608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5017,6 +5051,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3671511094779319715
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5514580688326897143}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5663764500440922770
 GameObject:
   m_ObjectHideFlags: 0
@@ -5027,8 +5083,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3437788379105610257}
   - component: {fileID: 1029854977758599124}
-  - component: {fileID: 7226916041211156559}
   - component: {fileID: 7109721341282099147}
+  - component: {fileID: 972953167534259315}
   m_Layer: 0
   m_Name: Obstacle (10)
   m_TagString: Untagged
@@ -5068,27 +5124,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7226916041211156559
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5663764500440922770}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7109721341282099147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5103,6 +5138,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &972953167534259315
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5663764500440922770}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5665616682053604897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5113,8 +5170,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6272766059833434477}
   - component: {fileID: 9192134742128648213}
-  - component: {fileID: 3371961064200537190}
   - component: {fileID: 5013699851917738226}
+  - component: {fileID: 7310325753186778882}
   m_Layer: 0
   m_Name: Obstacle (32)
   m_TagString: Untagged
@@ -5154,27 +5211,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3371961064200537190
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5665616682053604897}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5013699851917738226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5189,6 +5225,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7310325753186778882
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5665616682053604897}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5780304493349631073
 GameObject:
   m_ObjectHideFlags: 0
@@ -5199,8 +5257,8 @@ GameObject:
   m_Component:
   - component: {fileID: 630004021778078440}
   - component: {fileID: 819074313811923785}
-  - component: {fileID: 8309704985139044269}
   - component: {fileID: 1488759953074046549}
+  - component: {fileID: 1097088881196345856}
   m_Layer: 0
   m_Name: Obstacle (13)
   m_TagString: Untagged
@@ -5240,27 +5298,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8309704985139044269
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5780304493349631073}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1488759953074046549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5275,6 +5312,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1097088881196345856
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5780304493349631073}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5988530316686040616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5285,8 +5344,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8364596235377863700}
   - component: {fileID: 7824010033605640136}
-  - component: {fileID: 259027846510496333}
   - component: {fileID: 9013688153109502480}
+  - component: {fileID: 2409762643400238655}
   m_Layer: 0
   m_Name: Obstacle (11)
   m_TagString: Untagged
@@ -5326,27 +5385,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &259027846510496333
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5988530316686040616}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9013688153109502480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5361,6 +5399,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2409762643400238655
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988530316686040616}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6205724013937815495
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,8 +5431,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2107410198658586683}
   - component: {fileID: 5795034362796995857}
-  - component: {fileID: 2586166949188346528}
   - component: {fileID: 7427127075817458260}
+  - component: {fileID: 2422935479067563187}
   m_Layer: 0
   m_Name: Obstacle (27)
   m_TagString: Untagged
@@ -5412,27 +5472,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2586166949188346528
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6205724013937815495}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7427127075817458260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5447,6 +5486,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2422935479067563187
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6205724013937815495}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6225596756755952250
 GameObject:
   m_ObjectHideFlags: 0
@@ -5457,8 +5518,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7279793896284659784}
   - component: {fileID: 8258807510208942439}
-  - component: {fileID: 687686109338620166}
   - component: {fileID: 3010433273613789272}
+  - component: {fileID: 4153146267048651418}
   m_Layer: 0
   m_Name: Obstacle (14)
   m_TagString: Untagged
@@ -5498,27 +5559,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &687686109338620166
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6225596756755952250}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3010433273613789272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5533,6 +5573,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4153146267048651418
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6225596756755952250}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6312309151709771199
 GameObject:
   m_ObjectHideFlags: 0
@@ -5543,8 +5605,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2945245911538190214}
   - component: {fileID: 6123428279600621822}
-  - component: {fileID: 2263728129176766800}
   - component: {fileID: 8784569785553429484}
+  - component: {fileID: 6096650721528942448}
   m_Layer: 0
   m_Name: Obstacle (74)
   m_TagString: Untagged
@@ -5584,27 +5646,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2263728129176766800
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6312309151709771199}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8784569785553429484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5619,6 +5660,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6096650721528942448
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6312309151709771199}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6399205490023471232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5629,8 +5692,8 @@ GameObject:
   m_Component:
   - component: {fileID: 803914440346945178}
   - component: {fileID: 4221599434267127195}
-  - component: {fileID: 8739602499454379965}
   - component: {fileID: 6987881674030493090}
+  - component: {fileID: 8379251399768795854}
   m_Layer: 0
   m_Name: Obstacle (68)
   m_TagString: Untagged
@@ -5670,27 +5733,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8739602499454379965
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6399205490023471232}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6987881674030493090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5705,6 +5747,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &8379251399768795854
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6399205490023471232}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6423188705379585640
 GameObject:
   m_ObjectHideFlags: 0
@@ -5715,8 +5779,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2374386501566462848}
   - component: {fileID: 3908516116975328978}
-  - component: {fileID: 5242239603102635818}
   - component: {fileID: 8713835831437322667}
+  - component: {fileID: 4963168182221263048}
   m_Layer: 0
   m_Name: Obstacle (4)
   m_TagString: Untagged
@@ -5756,27 +5820,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5242239603102635818
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6423188705379585640}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8713835831437322667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5791,6 +5834,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4963168182221263048
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423188705379585640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6476640072177741842
 GameObject:
   m_ObjectHideFlags: 0
@@ -5801,8 +5866,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4111559611081808439}
   - component: {fileID: 9206489645435440135}
-  - component: {fileID: 1311318703932724840}
   - component: {fileID: 245643740136335767}
+  - component: {fileID: 4061731577826713013}
   m_Layer: 0
   m_Name: Obstacle (23)
   m_TagString: Untagged
@@ -5842,27 +5907,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1311318703932724840
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6476640072177741842}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &245643740136335767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5877,6 +5921,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4061731577826713013
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6476640072177741842}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6525498898486076454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5887,8 +5953,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7208028147125357753}
   - component: {fileID: 6599342742013794818}
-  - component: {fileID: 3298288443798525110}
   - component: {fileID: 2941655221807777652}
+  - component: {fileID: 4511195184679219765}
   m_Layer: 0
   m_Name: Obstacle (35)
   m_TagString: Untagged
@@ -5928,27 +5994,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3298288443798525110
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6525498898486076454}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2941655221807777652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5963,6 +6008,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4511195184679219765
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6525498898486076454}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6571046620293909313
 GameObject:
   m_ObjectHideFlags: 0
@@ -5973,8 +6040,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7658023465945824090}
   - component: {fileID: 7083177986749866898}
-  - component: {fileID: 2073498317853467548}
   - component: {fileID: 9113330461542954508}
+  - component: {fileID: 5433166085750897395}
   m_Layer: 0
   m_Name: Obstacle (60)
   m_TagString: Untagged
@@ -6014,27 +6081,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2073498317853467548
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6571046620293909313}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9113330461542954508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6049,6 +6095,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5433166085750897395
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6571046620293909313}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6640502027693048097
 GameObject:
   m_ObjectHideFlags: 0
@@ -6059,8 +6127,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2484854177768423630}
   - component: {fileID: 8837920864981525135}
-  - component: {fileID: 7425639474925852859}
   - component: {fileID: 7236890885804889517}
+  - component: {fileID: 3334891781144788381}
   m_Layer: 0
   m_Name: Obstacle (88)
   m_TagString: Untagged
@@ -6100,27 +6168,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7425639474925852859
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6640502027693048097}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7236890885804889517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6135,6 +6182,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3334891781144788381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640502027693048097}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6743832715364051415
 GameObject:
   m_ObjectHideFlags: 0
@@ -6145,8 +6214,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7704669574919305689}
   - component: {fileID: 3382193751319728983}
-  - component: {fileID: 3603679318700602260}
   - component: {fileID: 6553201246456337248}
+  - component: {fileID: 7750304824821629508}
   m_Layer: 0
   m_Name: Obstacle (30)
   m_TagString: Untagged
@@ -6186,27 +6255,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3603679318700602260
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6743832715364051415}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6553201246456337248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6221,6 +6269,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7750304824821629508
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743832715364051415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6780246178595279503
 GameObject:
   m_ObjectHideFlags: 0
@@ -6231,8 +6301,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9012782677754539650}
   - component: {fileID: 7345876619307181702}
-  - component: {fileID: 3658639428407583970}
   - component: {fileID: 5779761706871964864}
+  - component: {fileID: 1006534172390559942}
   m_Layer: 0
   m_Name: Obstacle (65)
   m_TagString: Untagged
@@ -6272,27 +6342,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3658639428407583970
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6780246178595279503}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5779761706871964864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6307,6 +6356,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1006534172390559942
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6780246178595279503}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6834943959681041178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6317,8 +6388,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1442460808268425228}
   - component: {fileID: 7338937356468620886}
-  - component: {fileID: 7118230807687885095}
   - component: {fileID: 6754732914119841228}
+  - component: {fileID: 107184746497275131}
   m_Layer: 0
   m_Name: Obstacle (41)
   m_TagString: Untagged
@@ -6358,27 +6429,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7118230807687885095
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6834943959681041178}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6754732914119841228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6393,6 +6443,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &107184746497275131
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6834943959681041178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6906688014971505430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6403,8 +6475,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8378607384085538823}
   - component: {fileID: 4345455835637812779}
-  - component: {fileID: 5437916019540624211}
   - component: {fileID: 5683328008514686107}
+  - component: {fileID: 1784306702803083113}
   m_Layer: 0
   m_Name: Obstacle (53)
   m_TagString: Untagged
@@ -6444,27 +6516,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &5437916019540624211
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6906688014971505430}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5683328008514686107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6479,6 +6530,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1784306702803083113
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6906688014971505430}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6908647213843493609
 GameObject:
   m_ObjectHideFlags: 0
@@ -6489,8 +6562,8 @@ GameObject:
   m_Component:
   - component: {fileID: 474794223254331073}
   - component: {fileID: 5068528415114547428}
-  - component: {fileID: 3099944657213474180}
   - component: {fileID: 8998009765489214337}
+  - component: {fileID: 4758784374930520339}
   m_Layer: 0
   m_Name: Obstacle (76)
   m_TagString: Untagged
@@ -6530,27 +6603,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3099944657213474180
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6908647213843493609}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8998009765489214337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6565,6 +6617,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4758784374930520339
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6908647213843493609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6965395658050002621
 GameObject:
   m_ObjectHideFlags: 0
@@ -6575,8 +6649,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1470178896348726525}
   - component: {fileID: 670214140182808599}
-  - component: {fileID: 6643687240142675653}
   - component: {fileID: 1089527064005289285}
+  - component: {fileID: 3409755589454396635}
   m_Layer: 0
   m_Name: Obstacle (79)
   m_TagString: Untagged
@@ -6616,27 +6690,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6643687240142675653
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6965395658050002621}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1089527064005289285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6651,6 +6704,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3409755589454396635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965395658050002621}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6993590759877890832
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,8 +6736,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7689626965734574466}
   - component: {fileID: 8326275615018836924}
-  - component: {fileID: 4739420404496946180}
   - component: {fileID: 5747776082742235698}
+  - component: {fileID: 7640256710117443442}
   m_Layer: 0
   m_Name: Obstacle (17)
   m_TagString: Untagged
@@ -6702,27 +6777,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4739420404496946180
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6993590759877890832}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5747776082742235698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6737,6 +6791,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &7640256710117443442
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6993590759877890832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6999291640875182141
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,8 +6823,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3934472312747536730}
   - component: {fileID: 8172050613824258732}
-  - component: {fileID: 7764976606788088910}
   - component: {fileID: 1327258446345766178}
+  - component: {fileID: 5180292527529347368}
   m_Layer: 0
   m_Name: Obstacle (39)
   m_TagString: Untagged
@@ -6788,27 +6864,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7764976606788088910
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6999291640875182141}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1327258446345766178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6823,6 +6878,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5180292527529347368
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999291640875182141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7010584243667261750
 GameObject:
   m_ObjectHideFlags: 0
@@ -6833,8 +6910,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4955121000426283221}
   - component: {fileID: 6686279273626363988}
-  - component: {fileID: 4621127880309514677}
   - component: {fileID: 7562015081121707829}
+  - component: {fileID: 6368184222685401374}
   m_Layer: 0
   m_Name: Obstacle (57)
   m_TagString: Untagged
@@ -6874,27 +6951,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4621127880309514677
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7010584243667261750}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7562015081121707829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6909,6 +6965,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6368184222685401374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7010584243667261750}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7046717396498929771
 GameObject:
   m_ObjectHideFlags: 0
@@ -6919,8 +6997,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1177337216005836249}
   - component: {fileID: 8853513397681832374}
-  - component: {fileID: 8075266747103894780}
   - component: {fileID: 6571317380272267344}
+  - component: {fileID: 671469366489167953}
   m_Layer: 0
   m_Name: Obstacle (75)
   m_TagString: Untagged
@@ -6960,27 +7038,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8075266747103894780
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7046717396498929771}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6571317380272267344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6995,6 +7052,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &671469366489167953
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046717396498929771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7050699192709732905
 GameObject:
   m_ObjectHideFlags: 0
@@ -7005,8 +7084,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5442495461732964946}
   - component: {fileID: 6474070356337902640}
-  - component: {fileID: 1440582657105864703}
   - component: {fileID: 6957309761846824780}
+  - component: {fileID: 181640397471991501}
   m_Layer: 0
   m_Name: Obstacle (26)
   m_TagString: Untagged
@@ -7046,27 +7125,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1440582657105864703
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7050699192709732905}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6957309761846824780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7081,6 +7139,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &181640397471991501
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7050699192709732905}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7367358319539166393
 GameObject:
   m_ObjectHideFlags: 0
@@ -7091,8 +7171,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8956478994561629709}
   - component: {fileID: 4311609717113977510}
-  - component: {fileID: 4342353050586618178}
   - component: {fileID: 1918442559413099957}
+  - component: {fileID: 3106672836457077859}
   m_Layer: 0
   m_Name: Obstacle (51)
   m_TagString: Untagged
@@ -7132,27 +7212,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4342353050586618178
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7367358319539166393}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1918442559413099957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7167,6 +7226,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3106672836457077859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367358319539166393}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7810582285632558726
 GameObject:
   m_ObjectHideFlags: 0
@@ -7177,8 +7258,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3568529354926223385}
   - component: {fileID: 5825825115722064872}
-  - component: {fileID: 4497207610188823649}
   - component: {fileID: 8217309387671787661}
+  - component: {fileID: 6110199199343840036}
   m_Layer: 0
   m_Name: Obstacle (92)
   m_TagString: Untagged
@@ -7218,27 +7299,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4497207610188823649
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7810582285632558726}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8217309387671787661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7253,6 +7313,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6110199199343840036
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7810582285632558726}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7821606985460105626
 GameObject:
   m_ObjectHideFlags: 0
@@ -7263,8 +7345,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1791038911425511168}
   - component: {fileID: 4405536244363694448}
-  - component: {fileID: 3501951138118500833}
   - component: {fileID: 7319620321671852873}
+  - component: {fileID: 6740793345304493954}
   m_Layer: 0
   m_Name: Obstacle (54)
   m_TagString: Untagged
@@ -7304,27 +7386,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3501951138118500833
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7821606985460105626}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7319620321671852873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7339,6 +7400,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6740793345304493954
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7821606985460105626}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8081632660235806716
 GameObject:
   m_ObjectHideFlags: 0
@@ -7349,8 +7432,8 @@ GameObject:
   m_Component:
   - component: {fileID: 378096673005062871}
   - component: {fileID: 8107500142486686343}
-  - component: {fileID: 6532941000916457504}
   - component: {fileID: 4952249058814083296}
+  - component: {fileID: 4596631562669068192}
   m_Layer: 0
   m_Name: Obstacle (50)
   m_TagString: Untagged
@@ -7390,27 +7473,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &6532941000916457504
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8081632660235806716}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4952249058814083296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7425,6 +7487,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &4596631562669068192
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081632660235806716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8117538198007303428
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,8 +7519,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5519462716700999038}
   - component: {fileID: 4169166035872168889}
-  - component: {fileID: 1191747744475580449}
   - component: {fileID: 1989775174306154134}
+  - component: {fileID: 6767188751222820025}
   m_Layer: 0
   m_Name: Obstacle (70)
   m_TagString: Untagged
@@ -7476,27 +7560,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1191747744475580449
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8117538198007303428}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1989775174306154134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7511,6 +7574,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &6767188751222820025
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8117538198007303428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8164323683358354172
 GameObject:
   m_ObjectHideFlags: 0
@@ -7521,8 +7606,8 @@ GameObject:
   m_Component:
   - component: {fileID: 226583309350637555}
   - component: {fileID: 6681444626754971357}
-  - component: {fileID: 4682980865002109248}
   - component: {fileID: 6501181953137323337}
+  - component: {fileID: 3122393430069115460}
   m_Layer: 0
   m_Name: Obstacle (67)
   m_TagString: Untagged
@@ -7562,27 +7647,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4682980865002109248
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8164323683358354172}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6501181953137323337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7597,6 +7661,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &3122393430069115460
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164323683358354172}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8182965900189071908
 GameObject:
   m_ObjectHideFlags: 0
@@ -7607,8 +7693,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4716800845785015813}
   - component: {fileID: 7324508552987509106}
-  - component: {fileID: 1058503608399618159}
   - component: {fileID: 7477471866294127751}
+  - component: {fileID: 853904431925744103}
   m_Layer: 0
   m_Name: Obstacle (83)
   m_TagString: Untagged
@@ -7648,27 +7734,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &1058503608399618159
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8182965900189071908}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7477471866294127751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7683,6 +7748,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &853904431925744103
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8182965900189071908}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8258897176216548198
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,8 +7780,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1135930871019458401}
   - component: {fileID: 4719218254562282165}
-  - component: {fileID: 6909710196533393808}
   - component: {fileID: 8138160548581634301}
+  - component: {fileID: 5591746810859635374}
   m_Layer: 0
   m_Name: ObstacleTwo
   m_TagString: Obstacle
@@ -7731,27 +7818,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnableTypes: 
   SpawnablePrefabs: []
---- !u!65 &6909710196533393808
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8258897176216548198}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8138160548581634301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7766,6 +7832,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5591746810859635374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8258897176216548198}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8258919719824789952
 GameObject:
   m_ObjectHideFlags: 0
@@ -7776,8 +7864,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6092340648686584027}
   - component: {fileID: 701807099890597680}
-  - component: {fileID: 2280053509699669073}
   - component: {fileID: 7557669625048572847}
+  - component: {fileID: 2828203615136669228}
   m_Layer: 0
   m_Name: Obstacle (81)
   m_TagString: Untagged
@@ -7817,27 +7905,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &2280053509699669073
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8258919719824789952}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7557669625048572847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7852,6 +7919,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2828203615136669228
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8258919719824789952}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8356240732018963500
 GameObject:
   m_ObjectHideFlags: 0
@@ -7862,8 +7951,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7429395849284250271}
   - component: {fileID: 4990583828297192348}
-  - component: {fileID: 7079477294232687303}
   - component: {fileID: 5028483486587956383}
+  - component: {fileID: 2079839100321327312}
   m_Layer: 0
   m_Name: Obstacle (89)
   m_TagString: Untagged
@@ -7903,27 +7992,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7079477294232687303
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8356240732018963500}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5028483486587956383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7938,6 +8006,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &2079839100321327312
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356240732018963500}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8367666376873787202
 GameObject:
   m_ObjectHideFlags: 0
@@ -7948,8 +8038,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2265942361613598644}
   - component: {fileID: 146820724328518407}
-  - component: {fileID: 4364110582389989715}
   - component: {fileID: 1353884101806754489}
+  - component: {fileID: 996086312253600634}
   m_Layer: 0
   m_Name: Obstacle (36)
   m_TagString: Untagged
@@ -7989,27 +8079,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4364110582389989715
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8367666376873787202}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1353884101806754489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8024,6 +8093,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &996086312253600634
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8367666376873787202}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8372427836882748371
 GameObject:
   m_ObjectHideFlags: 0
@@ -8034,8 +8125,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5397986494932098775}
   - component: {fileID: 9132419653900155093}
-  - component: {fileID: 3215324704437917851}
   - component: {fileID: 473037128577636449}
+  - component: {fileID: 284728583786285372}
   m_Layer: 0
   m_Name: Obstacle (77)
   m_TagString: Untagged
@@ -8075,27 +8166,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &3215324704437917851
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8372427836882748371}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &473037128577636449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8110,6 +8180,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &284728583786285372
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8372427836882748371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8774574801042867300
 GameObject:
   m_ObjectHideFlags: 0
@@ -8120,8 +8212,8 @@ GameObject:
   m_Component:
   - component: {fileID: 723757701962895685}
   - component: {fileID: 5587261575759445821}
-  - component: {fileID: 156966818418420362}
   - component: {fileID: 2254105341263473467}
+  - component: {fileID: 8520219688942484154}
   m_Layer: 0
   m_Name: Obstacle (47)
   m_TagString: Untagged
@@ -8161,27 +8253,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &156966818418420362
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8774574801042867300}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2254105341263473467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8196,6 +8267,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &8520219688942484154
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774574801042867300}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &9008259679491293576
 GameObject:
   m_ObjectHideFlags: 0
@@ -8206,8 +8299,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8496131648702935994}
   - component: {fileID: 3938122073786434484}
-  - component: {fileID: 8816079759865338662}
   - component: {fileID: 2518847119533705980}
+  - component: {fileID: 265316236636140848}
   m_Layer: 0
   m_Name: Obstacle (18)
   m_TagString: Untagged
@@ -8247,27 +8340,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &8816079759865338662
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9008259679491293576}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2518847119533705980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8282,6 +8354,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &265316236636140848
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9008259679491293576}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &9019304151652071340
 GameObject:
   m_ObjectHideFlags: 0
@@ -8292,8 +8386,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3245744460280633407}
   - component: {fileID: 8627932130841152451}
-  - component: {fileID: 4589466649546789506}
   - component: {fileID: 8456246744151847736}
+  - component: {fileID: 5194445809405153885}
   m_Layer: 0
   m_Name: Obstacle (7)
   m_TagString: Untagged
@@ -8333,27 +8427,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &4589466649546789506
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9019304151652071340}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8456246744151847736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8368,6 +8441,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &5194445809405153885
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019304151652071340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &9175329460134552430
 GameObject:
   m_ObjectHideFlags: 0
@@ -8378,8 +8473,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1382586766515972348}
   - component: {fileID: 1466907082135877006}
-  - component: {fileID: 7133318151913924991}
   - component: {fileID: 7224873488391972675}
+  - component: {fileID: 1084673477075436957}
   m_Layer: 0
   m_Name: Obstacle (82)
   m_TagString: Untagged
@@ -8419,27 +8514,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
   - {fileID: 3962102607398573390, guid: 23d968ea00f03cc43a2cc7dbd35e1a13, type: 3}
   - {fileID: 919132149155446097, guid: 987087f7fcfddce438f07ea59a82a053, type: 3}
---- !u!65 &7133318151913924991
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9175329460134552430}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7224873488391972675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8454,3 +8528,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 3287373517236165647, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
   damage: 100
+--- !u!64 &1084673477075436957
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175329460134552430}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
