@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5403676531213194830}
   - component: {fileID: 8384945763241564895}
   - component: {fileID: 2994199932101888544}
-  - component: {fileID: 3287373517236165647}
   - component: {fileID: 3601636386490841611}
   - component: {fileID: 4275961698369480905}
+  - component: {fileID: -7886555131277605514}
   m_Layer: 0
   m_Name: player splash
   m_TagString: Player
@@ -107,23 +107,6 @@ MonoBehaviour:
   smoothSpeed: 0.125
   offset: {x: 0, y: 2, z: -5}
   triggerCount: 1
---- !u!114 &3287373517236165647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264627348978886845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0518d20f4350fe34ca71ecabf9ddf2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
-  drainRate: 2
-  gameManager: {fileID: 0}
 --- !u!65 &3601636386490841611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -172,3 +155,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7886555131277605514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264627348978886845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0518d20f4350fe34ca71ecabf9ddf2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  healthBar: {fileID: 7378920097793659814, guid: d593c8773ccada54eb46b34780112081, type: 3}
+  drainRate: 2
+  gameManager: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
