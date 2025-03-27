@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 100f;
     public float currentHealth;
     public Image healthBar;
-    public float drainRate = 5f;
+    public float drainRate = 2f;
 
     private bool isDead;
     public GameManager gameManager;
