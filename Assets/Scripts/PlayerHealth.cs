@@ -4,8 +4,9 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth = 100f;
-    private float currentHealth;
+    public float currentHealth;
     public Image healthBar;
+    public float drainRate = 5f;
 
     private bool isDead;
     public GameManager gameManager;
@@ -17,7 +18,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        healthBar.fillAmount = Mathf.Clamp(maxHealth / currentHealth, 0, 1);
+        currentHealth -= drainRate * Time.deltaTime;
+
+        healthBar.fillAmount = Mathf.Clamp(currentHealth / maxHealth, 0, 1);
 
         if (currentHealth <= 0 && !isDead)
         {

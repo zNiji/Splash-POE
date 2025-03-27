@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5403676531213194830}
   - component: {fileID: 8384945763241564895}
   - component: {fileID: 2994199932101888544}
-  - component: {fileID: 6031613726144174785}
+  - component: {fileID: 3287373517236165647}
   m_Layer: 0
   m_Name: player splash
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   smoothSpeed: 0.125
   offset: {x: 0, y: 2, z: -5}
   triggerCount: 1
---- !u!114 &6031613726144174785
+--- !u!114 &3287373517236165647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,5 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   healthBar: {fileID: 0}
+  drainRate: 1
   gameManager: {fileID: 0}
