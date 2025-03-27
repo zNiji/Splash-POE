@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
-    public float damage;
+    public GameManager gameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +19,7 @@ public class Damage : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playerHealth.maxHealth -= damage;
+            gameManager.gameOver();
         }
     }
 }
