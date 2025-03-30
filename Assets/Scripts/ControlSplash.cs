@@ -9,6 +9,8 @@ public class ControlSplash : MonoBehaviour
 
     public int triggerCount = 1;
 
+    public float Speed { get => speed; set => speed = value; }
+
     // Update is called once per frame
     void Update()
     {
