@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PointsSystem : MonoBehaviour
 {
     private int points = 0;
-    public Text pointsText; 
+    public TMP_Text pointsText; 
 
     void Start()
     {
@@ -16,8 +17,13 @@ public class PointsSystem : MonoBehaviour
         if (other.CompareTag("Obstacle")) 
         {
             points += 1; 
-            UpdatePointsUI(); 
+            Update(); 
         }
+    }
+
+    private void Update()
+    {
+        UpdatePointsUI();
     }
 
     void UpdatePointsUI()

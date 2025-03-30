@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject gameOverUI;
+    public GameObject GameOverUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public void gameOver() 
     {
-        gameOverUI.SetActive(true);
+        GameOverUI.SetActive(true);
     }
 
     public void restart()
