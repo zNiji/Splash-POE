@@ -13,11 +13,10 @@ public class PointsSystem : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Collectible")) 
+        if (other.CompareTag("Obstacle")) 
         {
-            points += 10; 
-            UpdatePointsUI();
-            Destroy(other.gameObject); 
+            points += 1; 
+            UpdatePointsUI(); 
         }
     }
 
