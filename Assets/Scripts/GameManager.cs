@@ -45,5 +45,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameOverUI.SetActive(false);
+
     }
 }
