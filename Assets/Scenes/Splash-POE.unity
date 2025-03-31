@@ -517,6 +517,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9095926148427999485, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
   m_PrefabInstance: {fileID: 1392710126729508582}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1256247451 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 953271232440087142, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+  m_PrefabInstance: {fileID: 3732963435251236737}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1259276573 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4972685489625779802, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
@@ -940,7 +951,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6779435381627499317, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -969,6 +981,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1222395058877161092, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
+      propertyPath: pointsText
+      value: 
+      objectReference: {fileID: 1256247451}
     - target: {fileID: 2163658665160759929, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8049329
