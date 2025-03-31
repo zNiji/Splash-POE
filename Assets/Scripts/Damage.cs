@@ -19,7 +19,7 @@ public class Damage : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            gameManager.gameOver();
+            GameManager.Instance.gameOver();
         }
     }
 }

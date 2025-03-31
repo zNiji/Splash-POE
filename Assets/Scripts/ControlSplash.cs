@@ -7,7 +7,7 @@ public class ControlSplash : MonoBehaviour
     [SerializeField] private float smoothSpeed = 1.0f; // value to control the camera's movement speed
     [SerializeField] private Vector3 offset = new Vector3(0, 2, -7); // value to control the camera's position relative to the character
 
-    public int triggerCount = 1;
+    
 
     public float Speed { get => speed; set => speed = value; }
 
@@ -31,7 +31,7 @@ public class ControlSplash : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, 0, verticalInput);
 
         // Apply movement to the ball
-        transform.position += movement * (speed * triggerCount) * Time.deltaTime;
+        transform.position += movement * speed * Time.deltaTime;
 
         // Update camera position
         Vector3 desiredCameraPosition = transform.position + offset;

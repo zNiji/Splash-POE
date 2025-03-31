@@ -943,8 +943,12 @@ PrefabInstance:
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7777683115874616732, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7777683115874616732, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 364.3
+      value: 408.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -960,6 +964,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: GameOverUI
+      value: 
+      objectReference: {fileID: 423202901}
     - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: gameOverUI
       value: 
@@ -1112,6 +1120,10 @@ PrefabInstance:
     - target: {fileID: 3426381105849321051, guid: fb0aa6238b715464daf6dd9276cac1f2, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3426381105849321051, guid: fb0aa6238b715464daf6dd9276cac1f2, type: 3}
+      propertyPath: m_TagString
+      value: GameOverScreen
       objectReference: {fileID: 0}
     - target: {fileID: 7449834699545688870, guid: fb0aa6238b715464daf6dd9276cac1f2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
