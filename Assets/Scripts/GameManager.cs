@@ -38,12 +38,12 @@ public class GameManager : MonoBehaviour
 
     public void gameOver() 
     {
-        Debug.Log("???");
         GameOverUI.SetActive(true);
     }
 
     public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameOverUI.SetActive(false);
     }
 }
