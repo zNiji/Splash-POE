@@ -13,6 +13,7 @@ public class SpawnNextArea : MonoBehaviour
 
     private bool isSpawning = false; // Flag to check if the script is currently spawning a new ground
 
+    private Spawner spawner; // Reference to the Spawner
 
     void Awake()
     {
