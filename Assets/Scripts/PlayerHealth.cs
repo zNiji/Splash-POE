@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public float health = 100;
-    public float maxHealth;
+    public float maxHealth = 100; 
     public Image healthBar;
     public float drainRate = 2f;
 
@@ -13,20 +13,21 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        maxHealth = health;
+        maxHealth = 100; // Ensure maxHealth is 100
+        health = Mathf.Clamp(health, 0, maxHealth); // Clamp initial health
     }
 
     private void Update()
     {
         health -= drainRate * Time.deltaTime;
+        health = Mathf.Clamp(health, 0, maxHealth); // Prevent health from going below 0 or above 100
 
-        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+        healthBar.fillAmount = health / maxHealth;
 
         if (health <= 0 && !isDead)
         {
             isDead = true;
             gameManager.gameOver();
-
         }
     }
 
@@ -36,7 +37,8 @@ public class PlayerHealth : MonoBehaviour
         if (health < maxHealth)
         {
             health += amount;
-            healthBar.fillAmount = Mathf.Clamp(health, 0f, maxHealth);
+            health = Mathf.Clamp(health, 0, maxHealth); // Cap health at 100
+            healthBar.fillAmount = health / maxHealth;
             return true;
         }
         return false; // Returns false if no healing was needed
