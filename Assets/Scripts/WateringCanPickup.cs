@@ -16,7 +16,6 @@ public class WateringCanPickup : MonoBehaviour
         // Check if the colliding object is the player
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered the trigger");
             // Get the player's health component
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
 

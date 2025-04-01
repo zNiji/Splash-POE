@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 5403676531213194830}
   - component: {fileID: 8384945763241564895}
   - component: {fileID: 2994199932101888544}
-  - component: {fileID: 3601636386490841611}
   - component: {fileID: 4275961698369480905}
   - component: {fileID: -7886555131277605514}
   - component: {fileID: 1222395058877161092}
+  - component: {fileID: 4315913539186648338}
+  - component: {fileID: 2786020574914046831}
   m_Layer: 0
   m_Name: player splash
   m_TagString: Player
@@ -107,27 +108,6 @@ MonoBehaviour:
   cameraTransform: {fileID: 0}
   smoothSpeed: 1
   offset: {x: 0, y: 2, z: -7}
---- !u!65 &3601636386490841611
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264627348978886845}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 3.3635848, y: 3.4728227, z: 5.2884808}
-  m_Center: {x: -0.13691765, y: 0.00000014807593, z: -0.056010235}
 --- !u!54 &4275961698369480905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -184,4 +164,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13d9e58a532fbb408bba866ce19394f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 0
   pointsText: {fileID: 0}
+--- !u!135 &4315913539186648338
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264627348978886845}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.6442406
+  m_Center: {x: -0.05702138, y: 0.000013053417, z: -0.056071408}
+--- !u!135 &2786020574914046831
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264627348978886845}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.6442406
+  m_Center: {x: -0.05702138, y: 0.000013053417, z: -0.056071408}

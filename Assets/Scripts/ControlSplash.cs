@@ -7,12 +7,26 @@ public class ControlSplash : MonoBehaviour
     [SerializeField] private float smoothSpeed = 1.0f; // value to control the camera's movement speed
     [SerializeField] private Vector3 offset = new Vector3(0, 2, -7); // value to control the camera's position relative to the character
 
-    
+    public static ControlSplash instance;
 
     public float Speed { get => speed; set => speed = value; }
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
+    {
+        // Check if the instance is already created
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); // Don't destroy the singleton instance when the scene is loaded
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy the duplicate instance
+        }
+    }
+
+        // Update is called once per frame
+        void Update()
     {
         // Read the AD keys to move left and right
         float horizontalInput = 0;

@@ -6,6 +6,13 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverUI;
     public static GameManager Instance;
     public PointsSystem PointsSystem;
+
+    [SerializeField] private ControlSplash controlPlayerSpeed;
+
+    [SerializeField] private PlayerHealth controlPlayerHealth;
+
+    [SerializeField] private GameObject persistantObjects;
+
     void Awake()
     {
         // Check if the instance is already created
@@ -24,7 +31,14 @@ public class GameManager : MonoBehaviour
             GameOverUI = GameObject.FindWithTag("GameOverScreen");
             DontDestroyOnLoad(GameOverUI);
         }
+
+        if (persistantObjects == null)
+        {
+            persistantObjects = GameObject.Find("PersistantObjects");
+            DontDestroyOnLoad(persistantObjects);
+        }
     }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,7 +60,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameOverUI.SetActive(false);
-      
-
+        controlPlayerHealth.health = 100;
+        controlPlayerSpeed.Speed = 20;
     }
 }

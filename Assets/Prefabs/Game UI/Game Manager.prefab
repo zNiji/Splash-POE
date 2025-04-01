@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverUI: {fileID: 0}
+  PointsSystem: {fileID: 0}
+  controlPlayerSpeed: {fileID: 0}
+  controlPlayerHealth: {fileID: 0}
 --- !u!1 &9173527146694899236
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +161,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9179240951547724990}
     m_Modifications:
+    - target: {fileID: 341289719505171336, guid: 0da8c77a3c0f91041b52a6ab1c6e6926, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1915059643431182012, guid: 0da8c77a3c0f91041b52a6ab1c6e6926, type: 3}
       propertyPath: m_Name
       value: PointsText
@@ -267,6 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13d9e58a532fbb408bba866ce19394f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 0
   pointsText: {fileID: 341289719505171336, guid: 0da8c77a3c0f91041b52a6ab1c6e6926, type: 3}
 --- !u!224 &3868640623305259731 stripped
 RectTransform:

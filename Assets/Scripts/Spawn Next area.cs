@@ -9,7 +9,9 @@ public class SpawnNextArea : MonoBehaviour
     private static GameObject currentGround; // current ground in the scene
     private static GameObject previousGround; // previous ground in the scene
 
-    [SerializeField] private ControlSplash controlSplash;  // Reference to the ControlSplash script through the player
+    public ControlSplash controlSplash;  // Reference to the ControlSplash script through the player
+
+    public PlayerHealth controlPlayerHealth;
 
     private bool isSpawning = false; // Flag to check if the script is currently spawning a new ground
 
@@ -31,7 +33,11 @@ public class SpawnNextArea : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (controlSplash == null)
+        {
+            controlSplash = GameObject.FindGameObjectWithTag("Player").GetComponent<ControlSplash>();
+            controlPlayerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -61,6 +67,8 @@ public class SpawnNextArea : MonoBehaviour
             currentGround = nextGround;
 
             controlSplash.Speed += 10.0f; // Increase the speed of splash for difficulty
+
+            controlPlayerHealth.drainRate += 1.0f;
 
             isSpawning = false;
         }
