@@ -199,6 +199,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 1.42
       objectReference: {fileID: 0}
+    - target: {fileID: 2786020574914046831, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2994199932101888544, guid: 820b16e81b324c04d80aa30cb05b09ad, type: 3}
       propertyPath: cameraTransform
       value: 

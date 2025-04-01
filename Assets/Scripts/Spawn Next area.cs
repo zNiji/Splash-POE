@@ -79,9 +79,11 @@ public class SpawnNextArea : MonoBehaviour
         // Checks if the player has exited the trigger
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player has exited the trigger");
             // Delete the previous ground
             if (previousGround != null)
             {
+                Debug.Log("Destroying previous ground");
                 Destroy(previousGround);
             }
         }
