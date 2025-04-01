@@ -4,11 +4,12 @@ using TMPro;
 
 public class PointsSystem : MonoBehaviour
 {
-    private int points = 0;
+    public int points = 0;
     public TMP_Text pointsText; 
 
     void Start()
     {
+        points = 0;
         UpdatePointsUI();
     }
 
@@ -29,5 +30,10 @@ public class PointsSystem : MonoBehaviour
     void UpdatePointsUI()
     {
         pointsText.text = "Points: " + points.ToString();
+    }
+
+    void OnSceneLoaded()
+    {
+        points = 0;
     }
 }

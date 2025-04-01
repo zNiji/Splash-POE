@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject GameOverUI;
     public static GameManager Instance;
+    public PointsSystem PointsSystem;
     void Awake()
     {
         // Check if the instance is already created
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameOverUI.SetActive(false);
+      
 
     }
 }
