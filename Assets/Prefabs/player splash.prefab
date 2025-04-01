@@ -31,9 +31,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264627348978886845}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.9999876, y: -0, z: -0, w: 0.0049803997}
+  m_LocalRotation: {x: -0.9999876, y: 0, z: 0, w: 0.0049829828}
   m_LocalPosition: {x: 0.331213, y: 1.38, z: -6.62}
-  m_LocalScale: {x: 0.24613427, y: 0.24613427, z: 0.24613427}
+  m_LocalScale: {x: 0.8049329, y: 0.8049329, z: 0.8049329}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,11 +103,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9be0a3fd1b8bc42af6d67f6e4811bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 20
   cameraTransform: {fileID: 0}
-  smoothSpeed: 0.125
-  offset: {x: 0, y: 2, z: -5}
-  triggerCount: 1
+  smoothSpeed: 1
+  offset: {x: 0, y: 2, z: -7}
 --- !u!65 &3601636386490841611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -170,9 +169,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  healthBar: {fileID: 7378920097793659814, guid: d593c8773ccada54eb46b34780112081, type: 3}
+  healthBar: {fileID: 0}
   drainRate: 2
-  gameManager: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+  gameManager: {fileID: 0}
 --- !u!114 &1222395058877161092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,4 +184,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c13d9e58a532fbb408bba866ce19394f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsText: {fileID: 341289719505171336, guid: 0da8c77a3c0f91041b52a6ab1c6e6926, type: 3}
+  pointsText: {fileID: 0}

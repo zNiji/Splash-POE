@@ -8,6 +8,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private SpawnableType[] SpawnableTypes;
     [SerializeField] private GameObject[] SpawnablePrefabs;
 
+    private GameObject obstacle;
+
     private int obstacleIndex;
 
     private void Awake()
@@ -24,6 +26,15 @@ public class Spawner : MonoBehaviour
         GameObject obstaclePrefab = SpawnablePrefabs[obstacleIndex];
 
         // Instantiate the obstacle at the spawn point
-        GameObject obstacle = Instantiate(obstaclePrefab, transform.position, Quaternion.identity);
+        obstacle = Instantiate(obstaclePrefab, transform.position, Quaternion.identity);
+    }
+
+    public void DestroyObstacle()
+    {
+        if (obstacle != null)
+        {
+            Destroy(obstacle);
+            obstacle = null;
+        }
     }
 }

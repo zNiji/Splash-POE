@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Ground
   - GameOverScreen
+  - Spawner
   layers:
   - Default
   - TransparentFX

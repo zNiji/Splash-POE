@@ -13,8 +13,6 @@ public class SpawnNextArea : MonoBehaviour
 
     private bool isSpawning = false; // Flag to check if the script is currently spawning a new ground
 
-    private Spawner spawner; // Reference to the Spawner
-
     void Awake()
     {
         // Checks if the instance is already created
@@ -42,6 +40,16 @@ public class SpawnNextArea : MonoBehaviour
         if (other.CompareTag("Player") && !isSpawning)
         {
             isSpawning = true;
+
+            // Find all spawners
+            GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
+
+            // Loop through each spawner and destroy the obstacle
+            foreach (GameObject spawner in spawners)
+            {
+                Spawner spawnerPrefab = spawner.GetComponent<Spawner>();
+                spawnerPrefab.DestroyObstacle();
+            }
 
             // Spawns the next ground
             GameObject nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
