@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
     public void gameOver() 
     {
         GameOverUI.SetActive(true);
+        Time.timeScale = 0.0f;
     }
 
     public void restart()
@@ -62,5 +63,6 @@ public class GameManager : MonoBehaviour
         GameOverUI.SetActive(false);
         controlPlayerHealth.health = 100;
         controlPlayerSpeed.Speed = 20;
+        Time.timeScale = 1.0f;
     }
 }
