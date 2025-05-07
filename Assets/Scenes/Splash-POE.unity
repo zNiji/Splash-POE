@@ -773,6 +773,48 @@ PrefabInstance:
       propertyPath: controlPlayerHealth
       value: 
       objectReference: {fileID: 902996993}
+    - target: {fileID: 3007946471503379054, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0177
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007946471503379054, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0177
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007946471503379054, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0177
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007946471503379054, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 52.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500996233934794525, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_text
+      value: 'Restart
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662107630662815529, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: pointsText
+      value: 
+      objectReference: {fileID: 341289719505171336, guid: 0da8c77a3c0f91041b52a6ab1c6e6926, type: 3}
+    - target: {fileID: 4142703564483437433, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_text
+      value: 'Score: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191241606938873747, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_Name
+      value: RestartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272498594530787958, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708682721931107437, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7275808720608447222, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.37799
@@ -817,9 +859,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 9173527146694899236, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6779435381627499317, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2157013637105133559, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}

@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
 
     private bool isDead;
     public GameManager gameManager;
+    private bool isDrainPaused;
+    private float pauseTimer;
 
     private void Start()
     {
@@ -19,9 +21,22 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        health -= drainRate * Time.deltaTime;
-        health = Mathf.Clamp(health, 0, maxHealth); // Prevent health from going below 0 or above 100
+        // Only drain health if not paused
+        if (!isDrainPaused)
+        {
+            health -= drainRate * Time.deltaTime;
+        }
+        else
+        {
+            // Handle pause timer
+            pauseTimer -= Time.deltaTime;
+            if (pauseTimer <= 0)
+            {
+                isDrainPaused = false; // Resume draining when timer expires
+            }
+        }
 
+        health = Mathf.Clamp(health, 0, maxHealth); // Prevent health from going below 0 or above 100
         healthBar.fillAmount = health / maxHealth;
 
         if (health <= 0 && !isDead)
@@ -44,5 +59,11 @@ public class PlayerHealth : MonoBehaviour
         return false; // Returns false if no healing was needed
     }
 
-    
+    public void PauseHealthDrain(float duration)
+    {
+        isDrainPaused = true;
+        pauseTimer = duration;
+    }
+
+
 }
