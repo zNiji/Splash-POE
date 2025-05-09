@@ -53,8 +53,9 @@ public class GameManager : MonoBehaviour
 
     public void gameOver() 
     {
-        GameOverUI.SetActive(true);
         Time.timeScale = 0.0f;
+        GameOverUI.SetActive(true);
+        PointsSystem.pointsTextDeath.text = "Final " + PointsSystem.pointsText.text;
     }
 
     public void restart()

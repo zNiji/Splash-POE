@@ -4,8 +4,10 @@ using TMPro;
 
 public class PointsSystem : MonoBehaviour
 {
-    public int points = 0;
-    public TMP_Text pointsText; 
+    public int points;
+    public TMP_Text pointsText;
+    public TMP_Text pointsTextDeath;
+
 
     void Start()
     {
@@ -18,7 +20,7 @@ public class PointsSystem : MonoBehaviour
         if (other.CompareTag("Obstacle")) 
         {
             points += 1; 
-            Update(); 
+            //Update(); 
         }
     }
 
@@ -30,10 +32,5 @@ public class PointsSystem : MonoBehaviour
     void UpdatePointsUI()
     {
         pointsText.text = "Points: " + points.ToString();
-    }
-
-    void OnSceneLoaded()
-    {
-        points = 0;
     }
 }
