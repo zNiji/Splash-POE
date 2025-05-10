@@ -21,7 +21,6 @@ public class PointsSystem : MonoBehaviour
         if (other.CompareTag("Obstacle"))
         {
             points += 1;
-            Debug.Log(points);
             UpdatePointsUI();
         }
     }

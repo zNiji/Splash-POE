@@ -669,7 +669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 0
   pointsText: {fileID: 1256247451}
-  pointsTextDeath: {fileID: 0}
+  pointsTextDeath: {fileID: 1047473079}
 --- !u!114 &1977687045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,11 +874,11 @@ PrefabInstance:
     - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: controlPlayerSpeed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1977687046}
     - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: controlPlayerHealth
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1977687045}
     - target: {fileID: 3007946471503379054, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0177
