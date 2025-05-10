@@ -860,6 +860,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 604174790}
     - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1977687041}
+    - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: GameOverUI
       value: 
       objectReference: {fileID: 1286376041}

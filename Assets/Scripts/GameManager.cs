@@ -7,6 +7,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public PointsSystem PointsSystem;
 
+    public Animator animator;
+    public bool NormalRun = false;
+    public bool FastRun = false;
+
+    [SerializeField] private int distance = 0;
+
     [SerializeField] private ControlSplash controlPlayerSpeed;
 
     [SerializeField] private PlayerHealth controlPlayerHealth;
@@ -48,7 +54,39 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (NormalRun)
+        {
+            animator.SetBool("NormalRun", true);
+            animator.SetBool("FastRun", false);
+        }
+        else if (FastRun)
+        {
+            animator.SetBool("NormalRun", false);
+            animator.SetBool("FastRun", true);
+        }
+        else
+        {
+            // default state, e.g. idle
+            animator.SetBool("NormalRun", false);
+            animator.SetBool("FastRun", false);
+        }
+    }
+
+    public void RunFaster()
+    {
+        distance++;
+
+        if (distance > 2)
+        {
+            FastRun = true;
+            NormalRun = false;
+
+        }
+        else
+        {
+            FastRun = false;
+            NormalRun = true;
+        }
     }
 
     public void gameOver() 

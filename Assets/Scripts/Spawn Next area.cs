@@ -71,6 +71,8 @@ public class SpawnNextArea : MonoBehaviour
             controlPlayerHealth.drainRate += 1.0f;
 
             isSpawning = false;
+
+            GameManager.Instance.RunFaster();
         }
     }
 
