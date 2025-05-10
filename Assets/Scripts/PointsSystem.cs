@@ -28,6 +28,6 @@ public class PointsSystem : MonoBehaviour
 
     void UpdatePointsUI()
     {
-        pointsText.text = "Points: " + this.points.ToString();
+        pointsText.text = "Score: " + this.points.ToString();
     }
 }
