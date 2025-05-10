@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor;
 
 public class PointsSystem : MonoBehaviour
 {
-    public int points;
-    public TMP_Text pointsText;
-    public TMP_Text pointsTextDeath;
+    [SerializeField] private int points = 0;
+    [SerializeField] public TMP_Text pointsText;
+    [SerializeField] public TMP_Text pointsTextDeath;
 
 
     void Start()
@@ -17,20 +18,16 @@ public class PointsSystem : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Obstacle")) 
+        if (other.CompareTag("Obstacle"))
         {
-            points += 1; 
-            //Update(); 
+            points += 1;
+            Debug.Log(points);
+            UpdatePointsUI();
         }
-    }
-
-    private void Update()
-    {
-        UpdatePointsUI();
     }
 
     void UpdatePointsUI()
     {
-        pointsText.text = "Points: " + points.ToString();
+        pointsText.text = "Points: " + this.points.ToString();
     }
 }
