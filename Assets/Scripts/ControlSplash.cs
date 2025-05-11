@@ -7,6 +7,8 @@ public class ControlSplash : MonoBehaviour
     [SerializeField] private float smoothSpeed = 1.0f; // value to control the camera's movement speed
     [SerializeField] private Vector3 offset = new Vector3(0, 2, -7); // value to control the camera's position relative to the character
 
+    public float obstacleDestroyDistance = 10f;
+
     public static ControlSplash instance;
 
     public float Speed { get => speed; set => speed = value; }
@@ -25,8 +27,8 @@ public class ControlSplash : MonoBehaviour
         }
     }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
     {
         // Read the AD keys to move left and right
         float horizontalInput = 0;
@@ -54,5 +56,20 @@ public class ControlSplash : MonoBehaviour
 
         // Make camera face the character
         cameraTransform.LookAt(transform);
+
+        // Calculate the position and size of the box cast
+        Vector3 boxCastPosition = transform.position + transform.forward * 10f;
+        Vector3 boxCastSize = new Vector3(40f, 40f, 40f);
+        Vector3 boxCastDirection = -transform.forward;
+
+        // Cast a box into the scene
+        RaycastHit hit;
+        if (Physics.BoxCast(boxCastPosition, boxCastSize, boxCastDirection, out hit, Quaternion.identity, 10f))
+        {
+            if (hit.collider.gameObject.tag == "Obstacle")
+            {
+                Destroy(hit.collider.gameObject);
+            }
+        }
     }
 }

@@ -44,7 +44,7 @@ public class WaterGunPickup : MonoBehaviour
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.velocity = shootPoint.forward * projectileSpeed;
+            rb.linearVelocity = shootPoint.forward * projectileSpeed;
         }
 
         // Attach damage information to the projectile

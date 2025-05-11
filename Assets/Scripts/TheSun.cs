@@ -38,7 +38,7 @@ public class TheSun : MonoBehaviour
             if (rb != null)
             {
                 Vector3 direction = (player.position - spawnLocation.position).normalized;
-                rb.velocity = direction * fireballSpeed;
+                rb.linearVelocity = direction * fireballSpeed;
             }
             currentTime = maxTime;
         }
