@@ -93,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 55c412a31ef771a479b5508b58b157f8, type: 3}
       propertyPath: m_Name
-      value: Water Gun 1
+      value: Water Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -152,8 +152,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.7869189, y: 10.3188715, z: 18.916956}
+  m_Center: {x: 0.24811772, y: 4.659435, z: -0.96978605}
 --- !u!4 &8788950956484780167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 55c412a31ef771a479b5508b58b157f8, type: 3}
