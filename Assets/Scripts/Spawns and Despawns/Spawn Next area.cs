@@ -66,13 +66,8 @@ public class SpawnNextArea : MonoBehaviour
             // Updates the current ground reference
             currentGround = nextGround;
 
-            controlSplash.Speed += 10.0f; // Increase the speed of splash for difficulty
-
-            controlPlayerHealth.drainRate += 1.0f;
-
             isSpawning = false;
 
-            GameManager.Instance.RunFaster();
         }
     }
 
@@ -89,5 +84,12 @@ public class SpawnNextArea : MonoBehaviour
                 Destroy(previousGround);
             }
         }
+
+        controlSplash.Speed += 10.0f; // Increase the speed of splash for difficulty
+
+        controlPlayerHealth.drainRate += 1.0f;
+
+        GameManager.Instance.RunFaster();
+
     }
 }

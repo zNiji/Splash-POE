@@ -38,14 +38,16 @@ public class Spawner : MonoBehaviour
         GameObject obstaclePrefab = SpawnablePrefabs[obstacleIndex];
 
         // Define the spawn area along the length of the ground
-        float spawnAreaLength = 250f; // same as the z dimension of the ground
-        float spawnAreaWidth = 23f; // same as the x dimension of the ground
+        float spawnAreaLength = 250f; // Roughly the same as the z dimension of the ground
+        float spawnAreaWidth = 23f; // Roughly the same as the x dimension of the ground
 
         bool spawnPositionValid = false;
+
         while (!spawnPositionValid)
         {
             // Generate a random position along the length of the ground
             Vector3 groundPosition = transform.parent.position;
+
             spawnPositionX = groundPosition.x + UnityEngine.Random.Range(-spawnAreaWidth / 2, spawnAreaWidth / 2);
             spawnPositionY = groundPosition.y;
             spawnPositionZ = groundPosition.z + UnityEngine.Random.Range(-230, spawnAreaLength);
@@ -59,21 +61,36 @@ public class Spawner : MonoBehaviour
 
             if (renderer != null)
             {
-                int groundLayer = LayerMask.NameToLayer("ground");
-                Collider[] colliders = new Collider[10];
-                int count = Physics.OverlapSphereNonAlloc(new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), renderer.bounds.size.x / 2, colliders, ~groundLayer);
-                if (count == 0)
+                // Perform the box cast
+                Vector3 boxCenter = new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ);
+                Vector3 boxSize = renderer.bounds.size;
+                Quaternion boxRotation = Quaternion.identity;
+
+                RaycastHit[] hits = Physics.BoxCastAll(boxCenter, boxSize * 2, Vector3.zero, boxRotation, 0f, LayerMask.GetMask("GroundLayer"));
+
+                // Check if any objects were hit
+                if (hits.Length > 0)
                 {
+                    // If an object was hit, try a different spawn position
+                    spawnPositionValid = false;
+                }
+                else
+                {
+                    // If no objects were hit, the spawn position is valid
                     spawnPositionValid = true;
                 }
             }
-
             else
             {
                 spawnPositionValid = true;
             }
         }
 
+        // Check if an obstacle is already spawned at this position
+        if (obstacle != null && Vector3.Distance(obstacle.transform.position, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ)) < 0.1f)
+        {
+            DestroyObstacle();
+        }
 
         // Instantiate the obstacle at the random position
         if (obstacleIndex == 0)
@@ -90,6 +107,7 @@ public class Spawner : MonoBehaviour
     {
         if (obstacle != null)
         {
+            Debug.Log("Destroyed obstacle");
             Destroy(obstacle);
             obstacle = null;
         }
