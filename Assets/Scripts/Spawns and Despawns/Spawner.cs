@@ -66,7 +66,7 @@ public class Spawner : MonoBehaviour
                 Vector3 boxSize = renderer.bounds.size;
                 Quaternion boxRotation = Quaternion.identity;
 
-                RaycastHit[] hits = Physics.BoxCastAll(boxCenter, boxSize * 2, Vector3.zero, boxRotation, 0f, LayerMask.GetMask("GroundLayer"));
+                RaycastHit[] hits = Physics.BoxCastAll(boxCenter, boxSize * 2, Vector3.zero, boxRotation, 0f, LayerMask.GetMask("ObjectLayer"));
 
                 // Check if any objects were hit
                 if (hits.Length > 0)

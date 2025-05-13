@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PointsCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 3327857955531492849, guid: 52e96bc32170d9047be51af3452f92dd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7689573986171495755, guid: 52e96bc32170d9047be51af3452f92dd, type: 3}
       propertyPath: m_LocalScale.x
       value: 37.225323
@@ -140,8 +144,20 @@ PrefabInstance:
       value: 'Tree '
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eccb9882ae2e33140b710fda765f81ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eccb9882ae2e33140b710fda765f81ef, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742780737561719692, guid: eccb9882ae2e33140b710fda765f81ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487167654232718067, guid: eccb9882ae2e33140b710fda765f81ef, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

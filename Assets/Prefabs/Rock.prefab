@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PointsCounter
       objectReference: {fileID: 0}
+    - target: {fileID: 3327857955531492849, guid: 52e96bc32170d9047be51af3452f92dd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7689573986171495755, guid: 52e96bc32170d9047be51af3452f92dd, type: 3}
       propertyPath: m_LocalScale.x
       value: 258.20764
@@ -122,6 +126,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
       propertyPath: m_Name
       value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 652c3c8f737a9a64b95b71b93d024287, type: 3}
       propertyPath: m_TagString
