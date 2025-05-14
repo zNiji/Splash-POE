@@ -193,7 +193,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c868e9f1944b5a44bfd386e44b8da22, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 994441962}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c868e9f1944b5a44bfd386e44b8da22, type: 3}
       insertIndex: -1
@@ -554,6 +557,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &994441961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 994441962}
+  m_Layer: 0
+  m_Name: shootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &994441962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994441961}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.145901}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977687042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1047473079 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4142703564483437433, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
@@ -826,6 +860,22 @@ PrefabInstance:
     - target: {fileID: 352739132219154773, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
       propertyPath: m_Name
       value: Obstacle spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668487106033278155, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: SpawnableTypes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668487106033278155, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: 'pickUpPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8265073954413787709, guid: cd31f1229eb92ed45828c638e69c138f, type: 3}
+    - target: {fileID: 1668487106033278155, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: 'SpawnableTypes.Array.data[0]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668487106033278155, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: 'SpawnableTypes.Array.data[1]'
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2508581260256792475, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
       propertyPath: SpawnableTypes.Array.size

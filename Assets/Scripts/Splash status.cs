@@ -8,7 +8,7 @@ public class Splashstatus : MonoBehaviour
         // Check if the colliding object is the pick up
         if (other.GetComponent<WateringCanPickup>() != null)
         {
-            
+
             PlayerHealth playerHealth = GetComponent<PlayerHealth>(); // Get the player's health component
             float healthAmount = 50f; // Amount of health to restore
 
@@ -24,6 +24,22 @@ public class Splashstatus : MonoBehaviour
                 }
             }
         }
-        
+        else if (other.GetComponent<UmbrellaPickup>() != null)
+        {
+            float pauseDuration = 5f;
+            PlayerHealth playerHealth = GetComponent<PlayerHealth>(); ;
+            playerHealth = other.GetComponent<PlayerHealth>();
+
+            if (playerHealth != null)
+            {
+                playerHealth.PauseHealthDrain(pauseDuration);
+                Destroy(gameObject); // Destroy pickup after collection
+            }
+            
+        }
     }
 }
+
+
+    
+ 

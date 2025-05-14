@@ -9,8 +9,9 @@ public class WaterGunPickup : MonoBehaviour
     [SerializeField] private float projectileSpeed = 15f;
     [SerializeField] private float projectileLifetime = 3f;
     [SerializeField] private float damagePerShot = 10f;
-    private float shootTimer = 0f;
+    private float shootTimer = 10f;
     private bool isEquipped = false;
+ 
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,7 +32,7 @@ public class WaterGunPickup : MonoBehaviour
         if (shootTimer >= shootInterval)
         {
             Shoot();
-            shootTimer = 0f;
+            shootTimer = 10f;
         }
     }
 
