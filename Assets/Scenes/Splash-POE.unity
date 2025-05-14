@@ -213,6 +213,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c868e9f1944b5a44bfd386e44b8da22, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1977687048}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c868e9f1944b5a44bfd386e44b8da22, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1977687049}
   m_SourcePrefab: {fileID: 100100000, guid: 0c868e9f1944b5a44bfd386e44b8da22, type: 3}
 --- !u!1 &587589534
 GameObject:
@@ -579,9 +582,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6784d98c660e4744298117f22063a50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnableTypes: 03000000
+  SpawnableTypes: 0300000005000000
   pickUpPrefabs:
   - {fileID: 9068944465562517645, guid: 8e27f2165358d86449d93026142817ca, type: 3}
+  - {fileID: 3472885102261913354, guid: 57e167fbf4dc3684ea6b095e3b87b262, type: 3}
 --- !u!114 &1256247451 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 953271232440087142, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
@@ -772,6 +776,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.60309553, y: 1.471, z: 0.675113}
   m_Center: {x: -0.013477014, y: 0.7038561, z: 0.10742415}
+--- !u!114 &1977687049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977687040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e80946dcfbc25b4aaa0c21d42ac1e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &704713574657334583 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
@@ -898,6 +914,10 @@ PrefabInstance:
     - target: {fileID: 3064077576138225225, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
       propertyPath: controlPlayerHealth
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5306379386198834026, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: m_Name
+      value: Guaranteed PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 7332357056909411641, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
       propertyPath: m_LocalPosition.z

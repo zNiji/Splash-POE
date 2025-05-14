@@ -8,6 +8,8 @@ public class EObstacles : MonoBehaviour
         Tree,
         Fence,
         wateringCan,
+        WaterGun,
+        Umbrella,
         None
     }
 }
