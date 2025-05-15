@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class PlayerHealth : MonoBehaviour
 {
     public float health = 100;
-    public float maxHealth = 100; 
+    public float maxHealth = 100;
     public Image healthBar;
     public float drainRate = 2f;
 
@@ -12,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
     public GameManager gameManager;
     private bool isDrainPaused;
     private float pauseTimer;
+    private float pauseDuration; // Store total duration for UI normalization
+    public event Action<float, float> OnPauseTimerUpdate; // Event to notify UI
 
     private void Start()
     {
@@ -33,7 +36,10 @@ public class PlayerHealth : MonoBehaviour
             if (pauseTimer <= 0)
             {
                 isDrainPaused = false; // Resume draining when timer expires
+                pauseTimer = 0f;
             }
+            // Notify UI of remaining time
+            OnPauseTimerUpdate?.Invoke(pauseTimer, pauseDuration);
         }
 
         health = Mathf.Clamp(health, 0, maxHealth); // Prevent health from going below 0 or above 100
@@ -63,7 +69,8 @@ public class PlayerHealth : MonoBehaviour
     {
         isDrainPaused = true;
         pauseTimer = duration;
+        pauseDuration = duration; // Store for UI
+        // Notify UI to show timer
+        OnPauseTimerUpdate?.Invoke(pauseTimer, pauseDuration);
     }
-
-
 }
