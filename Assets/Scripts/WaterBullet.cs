@@ -20,4 +20,9 @@ public class WaterBullet : MonoBehaviour
         // Destroy the projectile on collision
         Destroy(gameObject);
     }
+
+    void Start()
+    {
+        Destroy(gameObject, 10f); // Destroy after 10 seconds
+    }
 }

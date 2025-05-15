@@ -2,60 +2,27 @@ using UnityEngine;
 
 public class WaterGunPickup : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 50f;
-    [SerializeField] private GameObject WaterBulletPrefab;
-    [SerializeField] public Transform shootPoint;
-    [SerializeField] private float shootInterval = 0.5f;
-    [SerializeField] private float projectileSpeed = 15f;
-    [SerializeField] private float projectileLifetime = 3f;
-    [SerializeField] private float damagePerShot = 10f;
-    private float shootTimer = 10f;
-    private bool isEquipped = false;
- 
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isEquipped = true;
-            gameObject.SetActive(false);
-        }
-    }
+    public float rotationSpeed = 50f; // Speed of pickup rotation
 
     void Update()
     {
-        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
-        if (!isEquipped) return;
-
-        // Handle automatic shooting
-        shootTimer += Time.deltaTime;
-        if (shootTimer >= shootInterval)
-        {
-            Shoot();
-            shootTimer = 10f;
-        }
+        // Rotate the pickup for visual effect
+        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
 
-    void Shoot()
+    void OnTriggerEnter(Collider other)
     {
-        // Instantiate the projectile at the shoot point
-        GameObject projectile = Instantiate(WaterBulletPrefab, shootPoint.position, shootPoint.rotation);
-
-        // Get the Rigidbody and set velocity forward
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
-        if (rb != null)
+        // Check if the player collides with the pickup
+        if (other.CompareTag("Player"))
         {
-            rb.linearVelocity = shootPoint.forward * projectileSpeed;
+            // Enable shooting for the player
+            WaterGunShooting playerShooting = other.GetComponent<WaterGunShooting>();
+            if (playerShooting != null)
+            {
+                playerShooting.EnableShooting();
+            }
+            // Destroy the pickup
+            Destroy(gameObject);
         }
-
-        // Attach damage information to the projectile
-        WaterBullet projectileScript = projectile.GetComponent<WaterBullet>();
-        if (projectileScript != null)
-        {
-            projectileScript.damage = damagePerShot;
-        }
-
-        // Destroy the projectile after its lifetime
-        Destroy(projectile, projectileLifetime);
     }
 }
