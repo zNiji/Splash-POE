@@ -28,7 +28,6 @@ public class PickupTimerUI : MonoBehaviour
         // Validate assignments
         if (waterGunShooting == null || playerHealth == null || waterGunTimerImage == null || umbrellaTimerImage == null)
         {
-            Debug.LogError("Missing assignments in PickupTimerUI: Check WaterGunShooting, PlayerHealth, WaterGunTimerImage, or UmbrellaTimerImage!");
             return;
         }
 

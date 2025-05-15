@@ -43,7 +43,6 @@ public class WaterGunShooting : MonoBehaviour
     {
         if (projectilePrefab == null || firePoint == null)
         {
-            Debug.LogError("ProjectilePrefab or FirePoint is not assigned!");
             return;
         }
 
@@ -53,16 +52,9 @@ public class WaterGunShooting : MonoBehaviour
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            // Ensure Rigidbody is not kinematic and has no constraints
-            rb.isKinematic = false;
-            rb.constraints = RigidbodyConstraints.None;
-            // Apply velocity in firePoint's forward direction
-            rb.velocity = firePoint.forward * projectileSpeed;
-            Debug.Log("Projectile fired with velocity: " + rb.velocity);
-        }
-        else
-        {
-            Debug.LogError("Projectile prefab missing Rigidbody!");
+            rb.linearVelocity = firePoint.forward * projectileSpeed;
+            // Ensure no collision with player
+            Physics.IgnoreCollision(projectile.GetComponent<Collider>(), GetComponent<Collider>());
         }
     }
 }
