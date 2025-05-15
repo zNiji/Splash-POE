@@ -1173,6 +1173,14 @@ PrefabInstance:
       propertyPath: controlPlayerHealth
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4917144022045859509, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f40f2e4a3a2ced44a085d3534ce2f3c, type: 2}
+    - target: {fileID: 5288067653032098556, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f40f2e4a3a2ced44a085d3534ce2f3c, type: 2}
     - target: {fileID: 5306379386198834026, guid: d59841a31405ade44898c434e40bc4a1, type: 3}
       propertyPath: m_Name
       value: Guaranteed PickUp
