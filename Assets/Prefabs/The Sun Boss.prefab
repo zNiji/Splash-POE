@@ -65,19 +65,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343c505a4d9e4d8499f0e3a4e6e8d549, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.69226897
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343c505a4d9e4d8499f0e3a4e6e8d549, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343c505a4d9e4d8499f0e3a4e6e8d549, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7216396
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343c505a4d9e4d8499f0e3a4e6e8d549, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343c505a4d9e4d8499f0e3a4e6e8d549, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -85,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343c505a4d9e4d8499f0e3a4e6e8d549, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 92.38
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 343c505a4d9e4d8499f0e3a4e6e8d549, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -134,7 +134,11 @@ MonoBehaviour:
   fireballPrefab: {fileID: 3771507610848059617, guid: db1b5f87f41408047b8d146f5cca6cc3, type: 3}
   maxTime: 1
   fireballSpeed: 10
+  player: {fileID: 7912390225371525543, guid: 28c39550d8a958845995f2c01ee3374b, type: 3}
+  offset: {x: 0, y: 30, z: 220}
+  smoothSpeed: 0.5
   maxHealth: 100
+  followSpeed: 2
 --- !u!65 &6223320404365757757
 BoxCollider:
   m_ObjectHideFlags: 0

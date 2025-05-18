@@ -95,14 +95,14 @@ public class SpawnNextArea : MonoBehaviour
                 Destroy(previousGround);
             }
 
-            if(GameManager.Instance.distance < 2)
+            if(GameManager.Instance.distance <= 2)
             {
                 controlSplash.Speed += 10.0f; // Increase the speed of splash for difficulty
 
                 controlPlayerHealth.drainRate += 1.0f;
 
-                GameManager.Instance.RunFaster();
             }
+            GameManager.Instance.RunFaster();
         }
     }
 }

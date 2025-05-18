@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         {
             FastRun = true;
             NormalRun = false;
-
+            SpawnBoss.instance.BossSpawner();
         }
         else
         {
