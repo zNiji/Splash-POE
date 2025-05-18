@@ -1060,6 +1060,14 @@ PrefabInstance:
       propertyPath: pointsTextDeath
       value: 
       objectReference: {fileID: 1047473079}
+    - target: {fileID: 3324642469901137879, guid: 28c39550d8a958845995f2c01ee3374b, type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324642469901137879, guid: 28c39550d8a958845995f2c01ee3374b, type: 3}
+      propertyPath: projectileSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4380621317642085315, guid: 28c39550d8a958845995f2c01ee3374b, type: 3}
       propertyPath: m_LocalPosition.z
       value: 18.78
