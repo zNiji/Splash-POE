@@ -16,10 +16,4 @@ public class SpawnPickUp : MonoBehaviour
         // Spawn the pickup game object
         Instantiate(pickupToSpawn, transform.position, Quaternion.identity);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public bool NormalRun = false;
     public bool FastRun = false;
 
-    [SerializeField] private int distance = 0;
+    public int distance = 0;
 
     [SerializeField] private ControlSplash controlPlayerSpeed;
 

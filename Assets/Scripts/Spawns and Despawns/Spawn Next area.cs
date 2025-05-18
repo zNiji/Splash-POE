@@ -6,6 +6,9 @@ public class SpawnNextArea : MonoBehaviour
 
     [SerializeField] private GameObject SpawnableGround; // prefab of the ground to spawn
 
+    [SerializeField] private GameObject emptyGround; // prefab of the boss ground to spawn
+
+
     private static GameObject currentGround; // current ground in the scene
     private static GameObject previousGround; // previous ground in the scene
 
@@ -47,6 +50,8 @@ public class SpawnNextArea : MonoBehaviour
         {
             isSpawning = true;
 
+            GameObject nextGround;
+
             // Find all spawners
             GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
 
@@ -57,8 +62,16 @@ public class SpawnNextArea : MonoBehaviour
                 spawnerPrefab.DestroyObstacle();
             }
 
-            // Spawns the next ground
-            GameObject nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
+            if (GameManager.Instance.distance > 2)
+            {
+                // Spawns the next ground
+                nextGround = Instantiate(emptyGround, SpawnGroundHere.position, Quaternion.identity);
+            }
+            else
+            {
+                // Spawns the next ground
+                nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
+            }
 
             // Updates the previous ground reference
             previousGround = currentGround;
@@ -76,20 +89,20 @@ public class SpawnNextArea : MonoBehaviour
         // Checks if the player has exited the trigger
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player has exited the trigger");
             // Delete the previous ground
             if (previousGround != null)
             {
-                Debug.Log("Destroying previous ground");
                 Destroy(previousGround);
             }
+
+            if(GameManager.Instance.distance < 2)
+            {
+                controlSplash.Speed += 10.0f; // Increase the speed of splash for difficulty
+
+                controlPlayerHealth.drainRate += 1.0f;
+
+                GameManager.Instance.RunFaster();
+            }
         }
-
-        controlSplash.Speed += 10.0f; // Increase the speed of splash for difficulty
-
-        controlPlayerHealth.drainRate += 1.0f;
-
-        GameManager.Instance.RunFaster();
-
     }
 }

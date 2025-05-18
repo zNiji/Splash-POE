@@ -66,7 +66,7 @@ public class ControlSplash : MonoBehaviour
         RaycastHit hit;
         if (Physics.BoxCast(boxCastPosition, boxCastSize, boxCastDirection, out hit, Quaternion.identity, 10f))
         {
-            if (hit.collider.gameObject.tag == "Obstacle")
+            if (hit.collider.gameObject.layer == LayerMask.NameToLayer("ObjectLayer"))
             {
                 Destroy(hit.collider.gameObject);
             }

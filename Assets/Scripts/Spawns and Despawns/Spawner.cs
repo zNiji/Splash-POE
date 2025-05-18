@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
 
     private void Awake()
     {
+        DestroyOverlappingObstacles(transform.position);
         for (int i = 0; i < 35; i++)
         {
             obstacleIndex = UnityEngine.Random.Range(0, SpawnableTypes.Length);
@@ -66,7 +67,7 @@ public class Spawner : MonoBehaviour
                 Vector3 boxSize = renderer.bounds.size;
                 Quaternion boxRotation = Quaternion.identity;
 
-                RaycastHit[] hits = Physics.BoxCastAll(boxCenter, boxSize * 2, Vector3.zero, boxRotation, 0f, LayerMask.GetMask("ObjectLayer"));
+                RaycastHit[] hits = Physics.BoxCastAll(boxCenter, boxSize * 4, Vector3.zero, boxRotation, 0f, LayerMask.GetMask("ObjectLayer"));
 
                 // Check if any objects were hit
                 if (hits.Length > 0)
@@ -92,6 +93,8 @@ public class Spawner : MonoBehaviour
             DestroyObstacle();
         }
 
+        DestroyOverlappingObstacles(new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ));
+
         // Instantiate the obstacle at the random position
         if (obstacleIndex == 0)
         {
@@ -110,6 +113,18 @@ public class Spawner : MonoBehaviour
             Debug.Log("Destroyed obstacle");
             Destroy(obstacle);
             obstacle = null;
+        }
+    }
+
+    private void DestroyOverlappingObstacles(Vector3 position)
+    {
+        Collider[] hits = Physics.OverlapSphere(position, 0.1f);
+        foreach (Collider hit in hits)
+        {
+            if (hit.gameObject.tag == "Obstacle")
+            {
+                Destroy(hit.gameObject);
+            }
         }
     }
 }
