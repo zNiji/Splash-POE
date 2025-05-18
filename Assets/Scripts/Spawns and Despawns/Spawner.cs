@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
     private void Awake()
     {
         DestroyOverlappingObstacles(transform.position);
-        for (int i = 0; i < 35; i++)
+        for (int i = 0; i < 30; i++)
         {
             obstacleIndex = UnityEngine.Random.Range(0, SpawnableTypes.Length);
             Spawn();
@@ -62,22 +62,33 @@ public class Spawner : MonoBehaviour
 
             if (renderer != null)
             {
-                // Perform the box cast
-                Vector3 boxCenter = new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ);
-                Vector3 boxSize = renderer.bounds.size;
-                Quaternion boxRotation = Quaternion.identity;
+                // Get the collider component from the obstacle prefab
+                Collider collider = obstaclePrefab.GetComponent<Collider>();
 
-                RaycastHit[] hits = Physics.BoxCastAll(boxCenter, boxSize * 4, Vector3.zero, boxRotation, 0f, LayerMask.GetMask("ObjectLayer"));
-
-                // Check if any objects were hit
-                if (hits.Length > 0)
+                if (collider != null)
                 {
-                    // If an object was hit, try a different spawn position
-                    spawnPositionValid = false;
+                    // Perform the box cast
+                    Vector3 boxCenter = new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ);
+                    Vector3 boxSize = collider.bounds.size;
+                    Quaternion boxRotation = Quaternion.identity;
+
+                    RaycastHit[] hits = Physics.BoxCastAll(boxCenter, boxSize, Vector3.zero, boxRotation, 0f, LayerMask.GetMask("ObjectLayer"));
+
+                    // Check if any objects were hit
+                    if (hits.Length > 0)
+                    {
+                        // If an object was hit, try a different spawn position
+                        spawnPositionValid = false;
+                    }
+                    else
+                    {
+                        // If no objects were hit, the spawn position is valid
+                        spawnPositionValid = true;
+                    }
                 }
                 else
                 {
-                    // If no objects were hit, the spawn position is valid
+                    Debug.LogError("No collider component found on the obstacle prefab.");
                     spawnPositionValid = true;
                 }
             }
@@ -123,6 +134,7 @@ public class Spawner : MonoBehaviour
         {
             if (hit.gameObject.tag == "Obstacle")
             {
+                Debug.Log("Found overlapping obstacle: " + hit.gameObject.name);
                 Destroy(hit.gameObject);
             }
         }
