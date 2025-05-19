@@ -12,6 +12,8 @@ public class FireballBossAttack : MonoBehaviour
         Vector3 direction = forward * speed;
 
         transform.position += direction * Time.deltaTime;
+
+        Destroy(gameObject, 5f);
     }
 
     private void OnCollisionEnter(Collision collision)
