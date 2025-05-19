@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject persistantObjects;
 
+    public bool spawn = false;
+
     void Awake()
     {
         // Check if the instance is already created
@@ -45,10 +47,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (distance == 2)
+        {
+            spawn = true;
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -76,20 +86,26 @@ public class GameManager : MonoBehaviour
     {
         distance++;
 
-        if (distance > 2)
+        if (distance == 2)
         {
             FastRun = true;
             NormalRun = false;
-            SpawnBoss.instance.BossSpawner();
         }
         else
         {
             FastRun = false;
             NormalRun = true;
         }
+
+        if (spawn) 
+        { 
+            SpawnBoss.instance.BossSpawner();
+            spawn = false;
+        }
+
     }
 
-    public void gameOver() 
+    public void gameOver()
     {
         Time.timeScale = 0.0f;
         GameOverUI.SetActive(true);

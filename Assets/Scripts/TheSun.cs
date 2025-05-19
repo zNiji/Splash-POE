@@ -12,6 +12,8 @@ public class TheSun : MonoBehaviour
 
     public float smoothSpeed = 0.5f; // value to control the speed of the boss's movement
 
+    // Singleton instance
+    public static TheSun instance;
 
     [SerializeField] private float maxHealth = 100f;
     private float currentHealth;
@@ -25,6 +27,20 @@ public class TheSun : MonoBehaviour
         if (playerObject != null)
         {
             player = playerObject.transform;
+        }
+    }
+
+    void Awake()
+    {
+        // Check if instance already exists
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            // If instance already exists, destroy this duplicate
+            Destroy(gameObject);
         }
     }
 
@@ -72,6 +88,7 @@ public class TheSun : MonoBehaviour
             currentTime = maxTime;
         }
     }
+
 
     public void TakeDamage(float damage)
     {
