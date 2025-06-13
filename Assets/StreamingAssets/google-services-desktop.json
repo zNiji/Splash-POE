@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "875738178078",
+    "firebase_url": "https://tester-8d874-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "tester-8d874",
+    "storage_bucket": "tester-8d874.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875738178078:android:e53ff544012f652360840f",
+        "android_client_info": {
+          "package_name": "com.riyaad.tester"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJJppenUkixe31u3_IrLYCC3r3aTKaCE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
