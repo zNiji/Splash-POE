@@ -23,5 +23,6 @@ public class AsteroidBossAttack : MonoBehaviour
             ControlSplash playerController = collision.gameObject.GetComponent<ControlSplash>();
         }
 
+        GameManager.Instance.gameOver();
     }
 }
