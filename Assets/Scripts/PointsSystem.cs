@@ -5,7 +5,7 @@ using UnityEditor;
 
 public class PointsSystem : MonoBehaviour
 {
-    [SerializeField] private int points = 0;
+    [SerializeField] public int points = 0;
     [SerializeField] public TMP_Text pointsText;
     [SerializeField] public TMP_Text pointsTextDeath;
 
@@ -25,7 +25,7 @@ public class PointsSystem : MonoBehaviour
         }
     }
 
-    void UpdatePointsUI()
+    public void UpdatePointsUI()
     {
         pointsText.text = "Score: " + this.points.ToString();
     }
