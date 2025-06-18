@@ -10,6 +10,9 @@ public class EObstacles : MonoBehaviour
         wateringCan,
         WaterGun,
         Umbrella,
+        Cactus,
+        Crate,
+        DesertRock,
         None
     }
 }

@@ -98,6 +98,7 @@ public class TheSun : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            GameManager.Instance.LevelChange();
         }
     }
 

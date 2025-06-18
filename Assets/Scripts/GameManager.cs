@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public bool NormalRun = false;
     public bool FastRun = false;
 
+    public bool LevelTwo = false;
+
     public int distance = 0;
 
     [SerializeField] private ControlSplash controlPlayerSpeed;
@@ -103,6 +105,14 @@ public class GameManager : MonoBehaviour
             spawn = false;
         }
 
+    }
+
+    public void LevelChange()
+    {
+        controlPlayerHealth.health = 100;
+        controlPlayerSpeed.Speed = 20;
+
+        LevelTwo = true;
     }
 
     public void gameOver()

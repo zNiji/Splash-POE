@@ -6,8 +6,9 @@ public class SpawnNextArea : MonoBehaviour
 
     [SerializeField] private GameObject SpawnableGround; // prefab of the ground to spawn
 
-    [SerializeField] private GameObject emptyGround; // prefab of the boss ground to spawn
+    [SerializeField] private GameObject SpawnableGroundTwo; // prefab of the ground to spawn
 
+    [SerializeField] private GameObject emptyGround; // prefab of the boss ground to spawn
 
     private static GameObject currentGround; // current ground in the scene
     private static GameObject previousGround; // previous ground in the scene
@@ -25,12 +26,6 @@ public class SpawnNextArea : MonoBehaviour
         {
             currentGround = GameObject.FindWithTag("Ground"); // Find the current ground in the scene by its tag
         }
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
     }
 
     // Update is called once per frame
@@ -70,7 +65,14 @@ public class SpawnNextArea : MonoBehaviour
             else
             {
                 // Spawns the next ground
-                nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
+                if (GameManager.Instance.LevelTwo)
+                {
+                    nextGround = Instantiate(SpawnableGroundTwo, SpawnGroundHere.position, Quaternion.identity);
+                }
+                else
+                {
+                    nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
+                }
             }
 
             // Updates the previous ground reference
