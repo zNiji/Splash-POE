@@ -21,8 +21,8 @@ public class FireballBossAttack : MonoBehaviour
         if (collision.gameObject.GetComponent<ControlSplash>() != null)
         {
             ControlSplash playerController = collision.gameObject.GetComponent<ControlSplash>();
+            
+            GameManager.Instance.gameOver();
         }
-
-        GameManager.Instance.gameOver();
     }
 }

@@ -824,6 +824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 2982329224595565960, guid: 1f3d098f5d8693f4aa7a61ede61b15b4, type: 3}
+      propertyPath: SpawnableGroundTwo
+      value: 
+      objectReference: {fileID: 696139978483004806, guid: c1350b880fa1f844aa625ba54458cd41, type: 3}
     - target: {fileID: 4749580072672703570, guid: 1f3d098f5d8693f4aa7a61ede61b15b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

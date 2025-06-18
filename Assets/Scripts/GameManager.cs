@@ -57,12 +57,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -78,7 +72,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // default state, e.g. idle
+            // default state
             animator.SetBool("NormalRun", false);
             animator.SetBool("FastRun", false);
         }
@@ -113,6 +107,8 @@ public class GameManager : MonoBehaviour
         controlPlayerSpeed.Speed = 20;
 
         LevelTwo = true;
+        NormalRun = false;
+        FastRun = false;
     }
 
     public void gameOver()

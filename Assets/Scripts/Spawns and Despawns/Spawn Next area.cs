@@ -57,7 +57,7 @@ public class SpawnNextArea : MonoBehaviour
                 spawnerPrefab.DestroyObstacle();
             }
 
-            if (GameManager.Instance.distance > 2)
+            if (GameManager.Instance.distance > 2 && !GameManager.Instance.LevelTwo)
             {
                 // Spawns the next ground
                 nextGround = Instantiate(emptyGround, SpawnGroundHere.position, Quaternion.identity);
