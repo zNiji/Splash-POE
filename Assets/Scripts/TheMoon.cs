@@ -5,7 +5,7 @@ public class TheMoon : MonoBehaviour
     public Transform spawnLocation;
     public GameObject asteroidPrefab;
     public float maxTime = 1f;
-    public float fireballSpeed = 10f;
+    public float asteroidSpeed = 10f;
     private float currentTime = 1f;
     [SerializeField] private Transform player;
     [SerializeField] private Vector3 offset = new Vector3(0, 20, 150);
@@ -83,7 +83,7 @@ public class TheMoon : MonoBehaviour
             if (rb != null)
             {
                 Vector3 fireballDirection = (childEmptyObject.position - spawnLocation.position).normalized;
-                rb.linearVelocity = fireballDirection * fireballSpeed;
+                rb.linearVelocity = fireballDirection * asteroidSpeed;
             }
             currentTime = maxTime;
         }
