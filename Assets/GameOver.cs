@@ -7,4 +7,9 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Main Menu");
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadSceneAsync("Splash-POE");
+    }
 }

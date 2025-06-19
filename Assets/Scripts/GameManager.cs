@@ -113,8 +113,7 @@ public class GameManager : MonoBehaviour
 
     public void gameOver()
     {
-        Time.timeScale = 0.0f;
-        GameOverUI.SetActive(true);
+        SceneManager.LoadSceneAsync("Game Over");
         PointsSystem.pointsTextDeath.text = "Final " + PointsSystem.pointsText.text;
     }
 
