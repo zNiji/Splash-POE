@@ -41,13 +41,6 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(GameOverUI);
         }
 
-        //if (persistantObjects == null)
-        //{
-        //    persistantObjects = GameObject.Find("PersistantObjects");
-        //    persistantObjects.transform.SetParent(null); // Make sure it's a root object
-        //    DontDestroyOnLoad(persistantObjects);
-        //}
-
         animator = player.GetComponent<Animator>();
     }
 
