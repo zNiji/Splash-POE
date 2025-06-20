@@ -333,6 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnGroundHere: {fileID: 371115597990032334}
   SpawnableGround: {fileID: 696139978483004806, guid: 1f3d098f5d8693f4aa7a61ede61b15b4, type: 3}
+  SpawnableGroundTwo: {fileID: 696139978483004806, guid: c1350b880fa1f844aa625ba54458cd41, type: 3}
   emptyGround: {fileID: 7311158915854177450}
   controlSplash: {fileID: 0}
   controlPlayerHealth: {fileID: 0}

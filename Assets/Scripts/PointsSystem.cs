@@ -9,7 +9,6 @@ public class PointsSystem : MonoBehaviour
     [SerializeField] public TMP_Text pointsText;
     [SerializeField] public TMP_Text pointsTextDeath;
 
-
     void Start()
     {
         points = 0;

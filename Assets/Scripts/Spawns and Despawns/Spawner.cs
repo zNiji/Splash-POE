@@ -122,8 +122,20 @@ public class Spawner : MonoBehaviour
         if (obstacle != null)
         {
             Debug.Log("Destroyed obstacle");
-            Destroy(obstacle);
+            DestroyObstacleRecursive(obstacle);
             obstacle = null;
+        }
+    }
+
+    private void DestroyObstacleRecursive(GameObject obstacle)
+    {
+        // Destroy the obstacle
+        Destroy(obstacle);
+
+        // Recursively destroy its parents
+        if (obstacle.transform.parent != null)
+        {
+            DestroyObstacleRecursive(obstacle.transform.parent.gameObject);
         }
     }
 

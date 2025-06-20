@@ -19,7 +19,6 @@ public class ControlSplash : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Don't destroy the singleton instance when the scene is loaded
         }
         else
         {

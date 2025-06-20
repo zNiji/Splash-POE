@@ -16,6 +16,21 @@ public class PlayerHealth : MonoBehaviour
     private float pauseDuration; // Store total duration for UI normalization
     public event Action<float, float> OnPauseTimerUpdate; // Event to notify UI
 
+    public static PlayerHealth instance;
+
+    void Awake()
+    {
+        // Check if the instance is already created
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy the duplicate instance
+        }
+    }
+
     private void Start()
     {
         maxHealth = 100; // Ensure maxHealth is 100

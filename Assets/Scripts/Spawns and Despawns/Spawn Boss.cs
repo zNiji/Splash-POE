@@ -13,17 +13,21 @@ public class SpawnBoss : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        transform.LookAt(player.transform.position);
+        if (player != null)
+        {
+            transform.LookAt(player.transform.position);
+        }
     }
 
     public void BossSpawner()
