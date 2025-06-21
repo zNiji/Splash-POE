@@ -3,43 +3,36 @@ using UnityEngine;
 
 public class Splashstatus : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        // Check if the colliding object is the pick up
-        if (other.GetComponent<WateringCanPickup>() != null)
+        GameManager.Instance.OnPickupCollected.AddListener(HandlePickup);
+    }
+
+    private void HandlePickup(PickupType pickupType)
+    {
+        PlayerHealth playerHealth = GetComponent<PlayerHealth>();
+
+        switch (pickupType)
         {
-
-            PlayerHealth playerHealth = GetComponent<PlayerHealth>(); // Get the player's health component
-            float healthAmount = 50f; // Amount of health to restore
-
-            if (playerHealth != null)
-            {
-                // Try to heal the player and check if healing was successful
-                bool wasHealed = playerHealth.Heal(healthAmount);
-
-                if (wasHealed)
+            case PickupType.WateringCan:
+                float healthAmount = 50f;
+                if (playerHealth != null)
                 {
-                    // Destroy the pickup object
-                    Destroy(other.gameObject);
+                    bool wasHealed = playerHealth.Heal(healthAmount);
+                    if (wasHealed)
+                    {
+                        // No need to destroy the pickup, it's already handled in the Pickup script
+                    }
                 }
-            }
-        }
-        else if (other.GetComponent<UmbrellaPickup>() != null)
-        {
-            float pauseDuration = 5f;
-            PlayerHealth playerHealth = GetComponent<PlayerHealth>(); ;
-            playerHealth = other.GetComponent<PlayerHealth>();
-
-            if (playerHealth != null)
-            {
-                playerHealth.PauseHealthDrain(pauseDuration);
-                Destroy(gameObject); // Destroy pickup after collection
-            }
-            
+                break;
+            case PickupType.Umbrella:
+                float pauseDuration = 5f;
+                if (playerHealth != null)
+                {
+                    playerHealth.PauseHealthDrain(pauseDuration);
+                }
+                break;
+            // Add more cases for each pickup type
         }
     }
 }
-
-
-    
- 

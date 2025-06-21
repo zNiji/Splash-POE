@@ -1712,7 +1712,7 @@ PrefabInstance:
     - target: {fileID: 2900857355451247876, guid: 28c39550d8a958845995f2c01ee3374b, type: 3}
       propertyPath: pointsTextDeath
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4778161354989830534, guid: 67832c75bf18efc44a0659d6e59a55a0, type: 3}
     - target: {fileID: 3324642469901137879, guid: 28c39550d8a958845995f2c01ee3374b, type: 3}
       propertyPath: fireRate
       value: 1

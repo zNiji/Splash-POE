@@ -99,6 +99,7 @@ public class TheSun : MonoBehaviour
         {
             Die();
             GameManager.Instance.LevelChange();
+            GameManager.Instance.LevelComplete.Invoke();
         }
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - GameOverScreen
   - Spawner
   - Boss
+  - PointsText
   layers:
   - Default
   - TransparentFX

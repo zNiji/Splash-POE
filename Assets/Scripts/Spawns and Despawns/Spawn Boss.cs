@@ -22,6 +22,11 @@ public class SpawnBoss : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
+    public void Start()
+    {
+        GameManager.Instance.Spawn.AddListener(BossSpawner);
+    }
+
     void Update()
     {
         if (player != null)

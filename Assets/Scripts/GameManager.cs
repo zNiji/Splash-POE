@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -21,7 +23,15 @@ public class GameManager : MonoBehaviour
 
     public GameObject spawnArea;
 
-    public bool spawn = false;
+    public bool spawner = false;
+
+    public UnityEvent<PickupType> OnPickupCollected;
+
+    public UnityEvent ObstaclePassed;
+
+    public UnityEvent Spawn;
+
+    public UnityEvent LevelComplete;
 
     void Awake()
     {
@@ -55,7 +65,7 @@ public class GameManager : MonoBehaviour
     {
         if (distance == 2)
         {
-            spawn = true;
+            spawner = true;
         }
     }
 
@@ -98,10 +108,10 @@ public class GameManager : MonoBehaviour
             NormalRun = true;
         }
 
-        if (spawn)
+        if (spawner)
         {
-            SpawnBoss.instance.BossSpawner();
-            spawn = false;
+            Spawn.Invoke();
+            spawner = false;
         }
 
     }
@@ -118,13 +128,18 @@ public class GameManager : MonoBehaviour
 
     public void gameOver()
     {
+        Time.timeScale = 0.0f;
+
         SceneManager.LoadSceneAsync("Game Over");
-        PointsSystem.pointsTextDeath.text = "Final " + PointsSystem.pointsText.text;
+
+        PointsSystem.UpdatePointsUIDeath();
     }
 
     public void restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PointsSystem.points = 0;
+        PointsSystem.UpdatePointsUI();
+
         GameOverUI.SetActive(false);
         PlayerHealth.instance.health = 100;
         ControlSplash.instance.Speed = 20;
