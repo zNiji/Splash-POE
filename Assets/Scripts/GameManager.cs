@@ -121,7 +121,8 @@ public class GameManager : MonoBehaviour
         PlayerHealth.instance.health = 100;
         ControlSplash.instance.Speed = 20;
 
-        LevelTwo = true;
+        distance = -2;
+
         NormalRun = false;
         FastRun = false;
 
