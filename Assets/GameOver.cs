@@ -11,6 +11,22 @@ public class GameOver : MonoBehaviour
 
     [SerializeField] public TMP_Text pointsText;
     [SerializeField] public TMP_Text LevelsCompletedText;
+    [SerializeField] private TMP_Text pointsTextDeath;
+
+    void Start()
+    {
+        // Find the PointsSystem GameObject
+        PointsSystem pointsSystem = FindObjectOfType<PointsSystem>();
+        if (pointsSystem != null && pointsTextDeath != null)
+        {
+            pointsSystem.pointsTextDeath = pointsTextDeath; // Assign the TMP_Text
+            pointsSystem.UpdatePointsUIDeath(); // Update the UI
+        }
+        else
+        {
+            Debug.LogError("PointsSystem or pointsTextDeath not found!");
+        }
+    }
 
     public void ShowGameOverScreen()
     {

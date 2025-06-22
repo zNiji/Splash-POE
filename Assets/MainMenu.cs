@@ -7,6 +7,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Splash-POE");
         Time.timeScale = 1f;
+        GameManager.Instance.player.transform.position = GameManager.Instance.spawnArea.transform.position;
+        GameManager.Instance.player.transform.rotation = GameManager.Instance.spawnArea.transform.rotation;
+
+        GameManager.Instance.restart();
     }
 
     public void QuitGame()

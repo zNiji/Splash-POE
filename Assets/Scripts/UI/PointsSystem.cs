@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor;
 
 public class PointsSystem : MonoBehaviour
 {
@@ -10,6 +9,12 @@ public class PointsSystem : MonoBehaviour
     public TMP_Text pointsTextDeath;
 
     public int levelsCompleted = 0;
+
+    void Awake()
+    {
+        // Ensure this GameObject persists across scenes
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
@@ -38,11 +43,13 @@ public class PointsSystem : MonoBehaviour
 
     public void UpdatePointsUI()
     {
-        pointsText.text = "Score: " + this.points.ToString();
+        if (pointsText != null)
+            pointsText.text = "Score: " + points.ToString();
     }
 
     public void UpdatePointsUIDeath()
     {
-        pointsTextDeath.text = "Final Score: " + this.points.ToString();
+        if (pointsTextDeath != null)
+            pointsTextDeath.text = "Final Score: " + points.ToString();
     }
 }
