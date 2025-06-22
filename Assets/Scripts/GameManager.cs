@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
         persistantObjects = GameObject.Find("PersistantObjects");
         persistantObjects.transform.SetParent(null); // Make sure it's a root object
         DontDestroyOnLoad(persistantObjects);
+        database = FindFirstObjectByType<Database>();
     }
 
     private void FixedUpdate()
@@ -145,7 +146,7 @@ public class GameManager : MonoBehaviour
 
         PlayerProgress playerProgress = await database.RetrievePlayerProgressAsync();
 
-        if (playerProgress != null && playerProgress.levelsCompleted > pointsSystem.levelsCompleted && playerProgress.points > pointsSystem.points)
+        if (playerProgress != null && playerProgress.points < pointsSystem.points)
         {
             database.StorePlayerProgress(pointsSystem.levelsCompleted, pointsSystem.points);
         }
