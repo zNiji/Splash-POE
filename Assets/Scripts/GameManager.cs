@@ -145,7 +145,7 @@ public class GameManager : MonoBehaviour
 
         PlayerProgress playerProgress = await database.RetrievePlayerProgressAsync();
 
-        if (playerProgress != null && playerProgress.levelsCompleted > pointsSystem.levelsCompleted && playerProgress.points > pointsSystem.points)
+        if (playerProgress != null && playerProgress.points < pointsSystem.points)
         {
             database.StorePlayerProgress(pointsSystem.levelsCompleted, pointsSystem.points);
         }
