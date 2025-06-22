@@ -52,4 +52,12 @@ public class PointsSystem : MonoBehaviour
         if (pointsTextDeath != null)
             pointsTextDeath.text = "Final Score: " + points.ToString();
     }
+
+    // New method to reset points
+    public void ResetPoints()
+    {
+        points = 0;
+        levelsCompleted = 0; // Optional: Reset levels completed if needed
+        UpdatePointsUI(); // Update the in-game UI to reflect the reset
+    }
 }

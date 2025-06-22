@@ -15,16 +15,11 @@ public class GameOver : MonoBehaviour
 
     void Start()
     {
-        // Find the PointsSystem GameObject
-        PointsSystem pointsSystem = FindObjectOfType<PointsSystem>();
+        PointsSystem pointsSystem = FindFirstObjectByType<PointsSystem>();
         if (pointsSystem != null && pointsTextDeath != null)
         {
             pointsSystem.pointsTextDeath = pointsTextDeath; // Assign the TMP_Text
             pointsSystem.UpdatePointsUIDeath(); // Update the UI
-        }
-        else
-        {
-            Debug.LogError("PointsSystem or pointsTextDeath not found!");
         }
     }
 
@@ -44,7 +39,11 @@ public class GameOver : MonoBehaviour
         SceneManager.LoadSceneAsync("Splash-POE");
         GameManager.Instance.player.transform.position = GameManager.Instance.spawnArea.transform.position;
         GameManager.Instance.player.transform.rotation = GameManager.Instance.spawnArea.transform.rotation;
-
+        PointsSystem pointsSystem = FindFirstObjectByType<PointsSystem>();
+        if (pointsSystem != null)
+        {
+            pointsSystem.ResetPoints(); // Reset the points
+        }
         GameManager.Instance.restart();
     }
 
