@@ -2,12 +2,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject GameOverUI;
     public static GameManager Instance;
     public PointsSystem pointsSystem;
+    public Database database;
+    public PlayerProgress playerProgress;
 
     public Animator animator;
     public bool NormalRun = false;
@@ -126,7 +129,7 @@ public class GameManager : MonoBehaviour
         NormalRun = false;
         FastRun = false;
 
-        if(pointsSystem.levelsCompleted >= 2)
+        if (pointsSystem.levelsCompleted >= 2)
         {
             RandomizeLevel();
         }
@@ -136,11 +139,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void gameOver()
+    public async Task gameOver()
     {
         Time.timeScale = 0.0f;
 
-        SceneManager.LoadSceneAsync("Game Over");
+        PlayerProgress playerProgress = await database.RetrievePlayerProgressAsync();
+
+        if (playerProgress != null && playerProgress.levelsCompleted > pointsSystem.levelsCompleted && playerProgress.points > pointsSystem.points)
+        {
+            database.StorePlayerProgress(pointsSystem.levelsCompleted, pointsSystem.points);
+        }
+        else if (playerProgress == null)
+        { 
+            database.StorePlayerProgress(pointsSystem.levelsCompleted, pointsSystem.points);
+        }
+
+        await SceneManager.LoadSceneAsync("Game Over");
 
         pointsSystem.UpdatePointsUIDeath();
     }

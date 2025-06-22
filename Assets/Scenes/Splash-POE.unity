@@ -972,6 +972,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688461525}
   m_CullTransparentMesh: 1
+--- !u!1 &772679904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 772679905}
+  - component: {fileID: 772679906}
+  m_Layer: 0
+  m_Name: 'Database Manager '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &772679905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772679904}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.530985, y: 111.87366, z: -213.57852}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1444755902}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &772679906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772679904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d05f70ea3306984fb12a6bdcc021fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsSystem: {fileID: 704713574657334585}
 --- !u!224 &854970789 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9179240951547724990, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
@@ -1249,6 +1294,7 @@ Transform:
   - {fileID: 704713574657334584}
   - {fileID: 1977687042}
   - {fileID: 1726931491}
+  - {fileID: 772679905}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726931490
@@ -1521,6 +1567,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1977687041}
     - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: database
+      value: 
+      objectReference: {fileID: 772679906}
+    - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: spawnArea
       value: 
       objectReference: {fileID: 1726931490}
@@ -1530,6 +1580,10 @@ PrefabInstance:
       objectReference: {fileID: 1286376041}
     - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
       propertyPath: PointsSystem
+      value: 
+      objectReference: {fileID: 704713574657334585}
+    - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}
+      propertyPath: pointsSystem
       value: 
       objectReference: {fileID: 704713574657334585}
     - target: {fileID: 1924405846220698041, guid: 368a36fbb136c764e8f10d0ee16bc370, type: 3}

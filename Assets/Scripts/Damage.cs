@@ -15,11 +15,11 @@ public class Damage : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other)
+    private async void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            GameManager.Instance.gameOver();
+            await GameManager.Instance.gameOver();
         }
     }
 }

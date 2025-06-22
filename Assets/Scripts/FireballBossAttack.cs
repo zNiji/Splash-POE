@@ -16,13 +16,13 @@ public class FireballBossAttack : MonoBehaviour
         Destroy(gameObject, 5f);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private async void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<ControlSplash>() != null)
         {
             ControlSplash playerController = collision.gameObject.GetComponent<ControlSplash>();
             
-            GameManager.Instance.gameOver();
+            await GameManager.Instance.gameOver();
         }
     }
 }
