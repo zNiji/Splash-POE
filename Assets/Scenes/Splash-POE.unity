@@ -1387,7 +1387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b1b3f3274d3de247a7447608f305e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossPrefab: {fileID: 8315745354160286308, guid: 18de519f4f9ecd547a8504509c345142, type: 3}
+  bossPrefabSun: {fileID: 8315745354160286308, guid: 18de519f4f9ecd547a8504509c345142, type: 3}
+  bossPrefabMoon: {fileID: 1176328722862987353, guid: 39dfea510072b20448832a7e357f3e9c, type: 3}
   offset: {x: 0, y: 15, z: 200}
   player: {fileID: 1977687040}
 --- !u!1001 &1293235254012025070

@@ -9,7 +9,7 @@ public class PointsSystem : MonoBehaviour
     [SerializeField] public TMP_Text pointsText;
     public TMP_Text pointsTextDeath;
 
-    private int levelsCompleted = 0;
+    public int levelsCompleted = 0;
 
     void Start()
     {

@@ -98,6 +98,8 @@ public class TheMoon : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            GameManager.Instance.LevelChange();
+            GameManager.Instance.LevelComplete.Invoke();
         }
     }
 

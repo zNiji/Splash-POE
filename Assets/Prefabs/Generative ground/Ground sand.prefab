@@ -185,6 +185,7 @@ MonoBehaviour:
   SpawnableGround: {fileID: 696139978483004806, guid: 1f3d098f5d8693f4aa7a61ede61b15b4, type: 3}
   SpawnableGroundTwo: {fileID: 696139978483004806}
   emptyGround: {fileID: 7311158915854177450, guid: 27b0551c24d69e34e992def213e0b349, type: 3}
+  emptyGroundSand: {fileID: 7311158915854177450, guid: b486eb0c0c8807d44b4d7c07fa0690f1, type: 3}
   controlSplash: {fileID: 0}
   controlPlayerHealth: {fileID: 0}
 --- !u!1 &2594847453141346586
@@ -563,7 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnableTypes: 03000000
   pickUpPrefabs:
-  - {fileID: 9068944465562517645, guid: 8e27f2165358d86449d93026142817ca, type: 3}
+  - {fileID: 7485964451584648827, guid: ae1ac7ab1175d534cbc81c0adbbc2b68, type: 3}
 --- !u!1 &6556790937881186102
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,8 +611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnableTypes: 0300000005000000
   pickUpPrefabs:
-  - {fileID: 9068944465562517645, guid: 8e27f2165358d86449d93026142817ca, type: 3}
-  - {fileID: 3472885102261913354, guid: 57e167fbf4dc3684ea6b095e3b87b262, type: 3}
+  - {fileID: 7485964451584648827, guid: ae1ac7ab1175d534cbc81c0adbbc2b68, type: 3}
+  - {fileID: 2235331677761708947, guid: 6e4e6f47e4ce4e94eb2f44f27225d7ff, type: 3}
 --- !u!1 &9148728519905606504
 GameObject:
   m_ObjectHideFlags: 0

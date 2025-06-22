@@ -6,9 +6,12 @@ public class SpawnNextArea : MonoBehaviour
 
     [SerializeField] private GameObject SpawnableGround; // prefab of the ground to spawn
 
-    [SerializeField] private GameObject SpawnableGroundTwo; // prefab of the ground to spawn
+    [SerializeField] private GameObject SpawnableGroundTwo; // prefab of the sand ground to spawn
 
     [SerializeField] private GameObject emptyGround; // prefab of the boss ground to spawn
+
+    [SerializeField] private GameObject emptyGroundSand; // prefab of the boss sand ground to spawn
+
 
     private static GameObject currentGround; // current ground in the scene
     private static GameObject previousGround; // previous ground in the scene
@@ -57,10 +60,17 @@ public class SpawnNextArea : MonoBehaviour
                 spawnerPrefab.DestroyObstacle();
             }
 
-            if (GameManager.Instance.distance > 2 && !GameManager.Instance.LevelTwo)
+            if (GameManager.Instance.distance > 2)
             {
                 // Spawns the next ground
-                nextGround = Instantiate(emptyGround, SpawnGroundHere.position, Quaternion.identity);
+                if (GameManager.Instance.LevelTwo)
+                {
+                    nextGround = Instantiate(emptyGroundSand, SpawnGroundHere.position, Quaternion.identity);
+                }
+                else
+                {
+                    nextGround = Instantiate(emptyGround, SpawnGroundHere.position, Quaternion.identity);
+                }
             }
             else
             {

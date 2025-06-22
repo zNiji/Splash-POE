@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject GameOverUI;
     public static GameManager Instance;
-    public PointsSystem PointsSystem;
+    public PointsSystem pointsSystem;
 
     public Animator animator;
     public bool NormalRun = false;
@@ -124,6 +124,15 @@ public class GameManager : MonoBehaviour
         LevelTwo = true;
         NormalRun = false;
         FastRun = false;
+
+        if(pointsSystem.levelsCompleted >= 2)
+        {
+            RandomizeLevel();
+        }
+        else
+        {
+            LevelTwo = true;
+        }
     }
 
     public void gameOver()
@@ -132,17 +141,29 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadSceneAsync("Game Over");
 
-        PointsSystem.UpdatePointsUIDeath();
+        pointsSystem.UpdatePointsUIDeath();
     }
 
     public void restart()
     {
-        PointsSystem.points = 0;
-        PointsSystem.UpdatePointsUI();
+        pointsSystem.points = 0;
+        pointsSystem.UpdatePointsUI();
 
         GameOverUI.SetActive(false);
         PlayerHealth.instance.health = 100;
         ControlSplash.instance.Speed = 20;
         Time.timeScale = 1.0f;
+    }
+
+    private void RandomizeLevel()
+    {
+        if (Random.Range(1, 11) >= 5)
+        {
+            LevelTwo = true;
+        }
+        else
+        {
+            LevelTwo = false;
+        }
     }
 }

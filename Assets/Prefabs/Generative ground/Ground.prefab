@@ -183,7 +183,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnGroundHere: {fileID: 6071060633150832343}
   SpawnableGround: {fileID: 696139978483004806}
+  SpawnableGroundTwo: {fileID: 696139978483004806, guid: c1350b880fa1f844aa625ba54458cd41, type: 3}
   emptyGround: {fileID: 7311158915854177450, guid: 27b0551c24d69e34e992def213e0b349, type: 3}
+  emptyGroundSand: {fileID: 7311158915854177450, guid: b486eb0c0c8807d44b4d7c07fa0690f1, type: 3}
   controlSplash: {fileID: 0}
   controlPlayerHealth: {fileID: 0}
 --- !u!1 &2594847453141346586
