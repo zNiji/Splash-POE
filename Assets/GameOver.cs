@@ -21,8 +21,6 @@ public class GameOver : MonoBehaviour
             pointsSystem.pointsTextDeath = pointsTextDeath; // Assign the TMP_Text
             pointsSystem.UpdatePointsUIDeath(); // Update the UI
         }
-
-        database = FindFirstObjectByType<Database>();
     }
 
     public void ShowGameOverScreen()
