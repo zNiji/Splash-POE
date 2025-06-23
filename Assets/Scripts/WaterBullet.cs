@@ -16,6 +16,14 @@ public class WaterBullet : MonoBehaviour
                 bossHealth.TakeDamageSun(damage);
             }
         }
+        else if (collision.gameObject.CompareTag("Moon"))
+        {
+            TheMoon moonHealth = collision.gameObject.GetComponent<TheMoon>();
+            if (moonHealth != null)
+            {
+                moonHealth.TakeDamageMoon(damage); // Assuming the method is called TakeDamageMoon
+            }
+        }
 
         // Destroy the projectile on collision
         Destroy(gameObject);

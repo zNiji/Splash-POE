@@ -15,8 +15,17 @@ public class UmbrellaPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Rotate the pickup
-        transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+        // Rotate based on the pickup type
+        if (gameObject.name == "Umbrella")
+        {
+            // Rotate Umbrella on the Y-axis
+            transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
+        }
+        else if (gameObject.name == "Sunhat")
+        {
+            // Rotate Sunhat on the Z-axis
+            transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
