@@ -106,16 +106,6 @@ public class Spawner : MonoBehaviour
 
         DestroyOverlappingObstacles(new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ));
 
-        //// Instantiate the obstacle at the random position
-        //if (obstacleIndex == 0)
-        //{
-        //    obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
-        //}
-        //else
-        //{
-        //    obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
-        //}
-
         switch (SpawnableTypes[obstacleIndex])
         {
             case SpawnableType.Rock:
@@ -155,7 +145,7 @@ public class Spawner : MonoBehaviour
                 break;
             
             case SpawnableType.SunHat:
-                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.Euler(0, 0, 0));
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.Euler(-90, 0, 0));
                 break;
             
             case SpawnableType.WaterBottle:
