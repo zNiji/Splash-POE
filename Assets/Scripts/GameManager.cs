@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public PointsSystem pointsSystem;
     public Database database;
     public PlayerProgress playerProgress;
+    public PauseMenu pauseMenu;
 
     public Animator animator;
     public bool NormalRun = false;
@@ -94,6 +95,11 @@ public class GameManager : MonoBehaviour
                 animator.SetBool("NormalRun", false);
                 animator.SetBool("FastRun", false);
             }
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            pauseMenu.Pause();
         }
     }
 
