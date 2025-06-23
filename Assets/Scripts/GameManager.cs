@@ -162,6 +162,7 @@ public class GameManager : MonoBehaviour
 
     public void restart()
     {
+        distance = 0;
         pointsSystem.points = 0;
         pointsSystem.UpdatePointsUI();
 
