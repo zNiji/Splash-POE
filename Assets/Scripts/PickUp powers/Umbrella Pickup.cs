@@ -32,6 +32,7 @@ public class UmbrellaPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().Play("Shield");
             playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {

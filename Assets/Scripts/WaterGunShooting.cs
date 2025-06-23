@@ -10,12 +10,24 @@ public class WaterGunShooting : MonoBehaviour
     public float fireRate = 0.5f; // Time between shots (seconds)
     private bool isShooting = false; // Tracks if auto-shooting is active
     public event Action<float, float> OnShootingTimerUpdate; // Event to notify UI
+    private AudioManager audioManager; // Cached AudioManager reference
+
+    void Start()
+    {
+        // Cache AudioManager reference for efficiency
+        audioManager = FindObjectOfType<AudioManager>();
+        if (audioManager == null)
+        {
+            Debug.LogError("AudioManager not found in scene!");
+        }
+    }
 
     // Called when player collects the pickup
     public void EnableShooting()
     {
         if (!isShooting) // Prevent restarting if already shooting
         {
+            audioManager?.Play("Shooting");
             StartCoroutine(AutoShoot());
         }
     }
@@ -36,6 +48,7 @@ public class WaterGunShooting : MonoBehaviour
         }
 
         isShooting = false; // Stop shooting after 5 seconds
+        audioManager?.Stop("Shooting"); // Stop the shooting sound
         OnShootingTimerUpdate?.Invoke(0f, duration); // Notify UI timer ended
     }
 

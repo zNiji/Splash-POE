@@ -72,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
         // Only heals if not at max health
         if (health < maxHealth)
         {
+            FindObjectOfType<AudioManager>().Play("Heal");
             health += amount;
             health = Mathf.Clamp(health, 0, maxHealth); // Cap health at 100
             healthBar.fillAmount = health / maxHealth;

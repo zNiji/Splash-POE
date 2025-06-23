@@ -149,6 +149,8 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0.0f;
 
+        FindObjectOfType<AudioManager>().Play("GameOver");
+
         PlayerProgress playerProgress = await database.RetrievePlayerProgressAsync();
 
         if (playerProgress != null && playerProgress.points < pointsSystem.points)
