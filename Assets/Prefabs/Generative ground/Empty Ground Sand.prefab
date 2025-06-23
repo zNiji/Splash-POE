@@ -338,6 +338,7 @@ MonoBehaviour:
   emptyGroundSand: {fileID: 7311158915854177450}
   controlSplash: {fileID: 0}
   controlPlayerHealth: {fileID: 0}
+  isSpawning: 0
 --- !u!1 &5863241870754786375
 GameObject:
   m_ObjectHideFlags: 0

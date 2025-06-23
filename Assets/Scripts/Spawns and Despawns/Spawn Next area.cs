@@ -20,7 +20,7 @@ public class SpawnNextArea : MonoBehaviour
 
     public PlayerHealth controlPlayerHealth;
 
-    private bool isSpawning = false; // Flag to check if the script is currently spawning a new ground
+    [SerializeField] private bool isSpawning = false; // Flag to check if the script is currently spawning a new ground
 
     void Awake()
     {
@@ -29,6 +29,8 @@ public class SpawnNextArea : MonoBehaviour
         {
             currentGround = GameObject.FindWithTag("Ground"); // Find the current ground in the scene by its tag
         }
+
+        isSpawning = false;
     }
 
     // Update is called once per frame
@@ -54,35 +56,53 @@ public class SpawnNextArea : MonoBehaviour
             GameObject[] spawners = GameObject.FindGameObjectsWithTag("Spawner");
 
             // Loop through each spawner and destroy the obstacle
-            foreach (GameObject spawner in spawners)
+            if (spawners != null)
             {
-                Spawner spawnerPrefab = spawner.GetComponent<Spawner>();
-                spawnerPrefab.DestroyObstacle();
-            }
-
-            if (GameManager.Instance.distance > 2)
-            {
-                // Spawns the next ground
-                if (GameManager.Instance.LevelTwo)
+                foreach (GameObject spawner in spawners)
                 {
-                    nextGround = Instantiate(emptyGroundSand, SpawnGroundHere.position, Quaternion.identity);
-                }
-                else
-                {
-                    nextGround = Instantiate(emptyGround, SpawnGroundHere.position, Quaternion.identity);
+                    Spawner spawnerScript = spawner.GetComponent<Spawner>();
+                    if (spawnerScript != null)
+                    {
+                        spawnerScript.DestroyObstacle();
+                    }
                 }
             }
             else
             {
-                // Spawns the next ground
-                if (GameManager.Instance.LevelTwo)
+                Debug.Log("No spawners found with tag 'Spawner'");
+            }
+
+            if (GameManager.Instance != null)
+            {
+                if (GameManager.Instance.distance > 2)
                 {
-                    nextGround = Instantiate(SpawnableGroundTwo, SpawnGroundHere.position, Quaternion.identity);
+                    // Spawns the next ground
+                    if (GameManager.Instance.LevelTwo)
+                    {
+                        nextGround = Instantiate(emptyGroundSand, SpawnGroundHere.position, Quaternion.identity);
+                    }
+                    else
+                    {
+                        nextGround = Instantiate(emptyGround, SpawnGroundHere.position, Quaternion.identity);
+                    }
                 }
                 else
                 {
-                    nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
+                    // Spawns the next ground
+                    if (GameManager.Instance.LevelTwo)
+                    {
+                        nextGround = Instantiate(SpawnableGroundTwo, SpawnGroundHere.position, Quaternion.identity);
+                    }
+                    else
+                    {
+                        nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
+                    }
                 }
+            }
+            else
+            {
+                nextGround = Instantiate(SpawnableGround, SpawnGroundHere.position, Quaternion.identity);
+                Debug.LogError("GameManager.Instance is null!");
             }
 
             // Updates the previous ground reference
@@ -92,7 +112,6 @@ public class SpawnNextArea : MonoBehaviour
             currentGround = nextGround;
 
             isSpawning = false;
-
         }
     }
 
@@ -107,7 +126,7 @@ public class SpawnNextArea : MonoBehaviour
                 Destroy(previousGround);
             }
 
-            if(GameManager.Instance.distance <= 2 && GameManager.Instance.distance >= 0)
+            if (GameManager.Instance.distance <= 2 && GameManager.Instance.distance >= 0)
             {
                 controlSplash.Speed += 10.0f; // Increase the speed of splash for difficulty
 

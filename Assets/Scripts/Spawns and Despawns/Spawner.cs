@@ -109,7 +109,7 @@ public class Spawner : MonoBehaviour
         // Instantiate the obstacle at the random position
         if (obstacleIndex == 0)
         {
-            obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.Euler(-90, 0, 0));
+            obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
         }
         else
         {

@@ -128,9 +128,8 @@ public class GameManager : MonoBehaviour
 
     public void LevelChange()
     {
-        PlayerHealth.instance.health = 100;
-        ControlSplash.instance.Speed = 20;
-
+        resetStats();
+        
         distance = -2;
 
         NormalRun = false;
@@ -172,10 +171,18 @@ public class GameManager : MonoBehaviour
         pointsSystem.points = 0;
         pointsSystem.UpdatePointsUI();
 
+        resetStats();
+
         GameOverUI.SetActive(false);
+        
+        Time.timeScale = 1.0f;
+    }
+
+    private void resetStats()
+    {
         PlayerHealth.instance.health = 100;
         ControlSplash.instance.Speed = 20;
-        Time.timeScale = 1.0f;
+        PlayerHealth.instance.drainRate = 2.0f;
     }
 
     private void RandomizeLevel()

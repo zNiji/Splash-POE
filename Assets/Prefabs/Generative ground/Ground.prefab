@@ -188,6 +188,7 @@ MonoBehaviour:
   emptyGroundSand: {fileID: 7311158915854177450, guid: b486eb0c0c8807d44b4d7c07fa0690f1, type: 3}
   controlSplash: {fileID: 0}
   controlPlayerHealth: {fileID: 0}
+  isSpawning: 0
 --- !u!1 &2594847453141346586
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +531,7 @@ GameObject:
   - component: {fileID: 119714702169535574}
   m_Layer: 0
   m_Name: Guaranteed PickUp
-  m_TagString: Spawner
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,7 +578,7 @@ GameObject:
   - component: {fileID: 4343904368769306498}
   m_Layer: 0
   m_Name: PickUp Spawner
-  m_TagString: Spawner
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

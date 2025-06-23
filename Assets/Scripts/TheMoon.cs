@@ -58,7 +58,7 @@ public class TheMoon : MonoBehaviour
         transform.rotation = Quaternion.LookRotation(player.transform.position - transform.position);
 
         // Adjust the rotation by 90 degrees to fix the firing direction
-        transform.rotation *= Quaternion.Euler(0, -90, 0);
+        transform.rotation *= Quaternion.Euler(0, 180, 0);
 
         // Update the spawn location to match the boss's position
         spawnLocation.position = transform.position;
@@ -69,20 +69,20 @@ public class TheMoon : MonoBehaviour
         if (currentTime <= 0)
         {
             // Get the child empty object's transform
-            Transform childEmptyObject = player.Find("Sun aiming point");
+            Transform playerPosition = player.transform;
 
-            if (childEmptyObject == null)
+            if (playerPosition == null)
             {
                 Debug.LogError("Child empty object not found.");
                 return;
             }
 
-            var go = Instantiate(asteroidPrefab, spawnLocation.position, Quaternion.LookRotation(childEmptyObject.position - spawnLocation.position));
+            var go = Instantiate(asteroidPrefab, spawnLocation.position, Quaternion.LookRotation(playerPosition.position - spawnLocation.position));
 
             Rigidbody rb = go.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                Vector3 fireballDirection = (childEmptyObject.position - spawnLocation.position).normalized;
+                Vector3 fireballDirection = (playerPosition.position - spawnLocation.position).normalized;
                 rb.linearVelocity = fireballDirection * asteroidSpeed;
             }
             currentTime = maxTime;
