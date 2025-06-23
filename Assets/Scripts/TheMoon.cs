@@ -69,20 +69,20 @@ public class TheMoon : MonoBehaviour
         if (currentTime <= 0)
         {
             // Get the child empty object's transform
-            Transform playerPosition = player.transform;
+            Transform childEmptyObject = player.Find("Sun aiming point");
 
-            if (playerPosition == null)
+            if (childEmptyObject == null)
             {
                 Debug.LogError("Child empty object not found.");
                 return;
             }
 
-            var go = Instantiate(asteroidPrefab, spawnLocation.position, Quaternion.LookRotation(playerPosition.position - spawnLocation.position));
+            var go = Instantiate(asteroidPrefab, spawnLocation.position, Quaternion.LookRotation(childEmptyObject.position - spawnLocation.position));
 
             Rigidbody rb = go.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                Vector3 fireballDirection = (playerPosition.position - spawnLocation.position).normalized;
+                Vector3 fireballDirection = (childEmptyObject.position - spawnLocation.position).normalized;
                 rb.linearVelocity = fireballDirection * asteroidSpeed;
             }
             currentTime = maxTime;
@@ -90,7 +90,7 @@ public class TheMoon : MonoBehaviour
     }
 
 
-    public void TakeDamage(float damage)
+    public void TakeDamageMoon(float damage)
     {
         currentHealth -= damage;
         Debug.Log($"Boss took {damage} damage. Current health: {currentHealth}");

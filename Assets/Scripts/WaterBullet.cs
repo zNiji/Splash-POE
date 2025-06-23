@@ -13,7 +13,7 @@ public class WaterBullet : MonoBehaviour
             TheSun bossHealth = collision.gameObject.GetComponent<TheSun>();
             if (bossHealth != null)
             {
-                bossHealth.TakeDamage(damage);
+                bossHealth.TakeDamageSun(damage);
             }
         }
 

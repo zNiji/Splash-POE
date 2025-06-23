@@ -106,14 +106,69 @@ public class Spawner : MonoBehaviour
 
         DestroyOverlappingObstacles(new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ));
 
-        // Instantiate the obstacle at the random position
-        if (obstacleIndex == 0)
+        //// Instantiate the obstacle at the random position
+        //if (obstacleIndex == 0)
+        //{
+        //    obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+        //}
+        //else
+        //{
+        //    obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+        //}
+
+        switch (SpawnableTypes[obstacleIndex])
         {
-            obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
-        }
-        else
-        {
-            obstacle = Instantiate(obstaclePrefab, new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+            case SpawnableType.Rock:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY + 0.3f, spawnPositionZ), Quaternion.Euler(-90, 0, 0));
+                break;
+
+            case SpawnableType.Tree:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+                break;
+
+            case SpawnableType.Fence:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY + 0.4f, spawnPositionZ), Quaternion.identity);
+                break;
+
+            case SpawnableType.wateringCan:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+                break;
+            
+            case SpawnableType.WaterGun:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+                break;
+            
+            case SpawnableType.Umbrella:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+                break;
+            
+            case SpawnableType.Cactus:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+                break;
+            
+            case SpawnableType.Crate:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY + 1.2f, spawnPositionZ), Quaternion.identity);
+                break;
+            
+            case SpawnableType.DesertRock:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY + 2f, spawnPositionZ), Quaternion.Euler(0, 0, -90));
+                break;
+            
+            case SpawnableType.SunHat:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.Euler(0, 0, 0));
+                break;
+            
+            case SpawnableType.WaterBottle:
+                obstacle = Instantiate(SpawnablePrefabs[obstacleIndex], new Vector3(spawnPositionX, spawnPositionY, spawnPositionZ), Quaternion.identity);
+                break;
+            
+            case SpawnableType.None:
+                Debug.LogError("Unknown SpawnableType");
+                return;
+            
+            default:
+                Debug.LogError("Unknown SpawnableType");
+                return;
         }
     }
 

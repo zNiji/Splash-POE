@@ -90,7 +90,7 @@ public class TheSun : MonoBehaviour
     }
 
 
-    public void TakeDamage(float damage)
+    public void TakeDamageSun(float damage)
     {
         currentHealth -= damage;
         Debug.Log($"Boss took {damage} damage. Current health: {currentHealth}");

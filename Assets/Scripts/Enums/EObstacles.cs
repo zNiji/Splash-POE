@@ -13,6 +13,8 @@ public class EObstacles : MonoBehaviour
         Cactus,
         Crate,
         DesertRock,
+        SunHat,
+        WaterBottle,
         None
     }
 }
